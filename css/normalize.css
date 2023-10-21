@@ -1,0 +1,31 @@
+/*Normalizacion del sitios*/
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; /*comportamiento de margen y rellenos*/
+}
+
+html {
+    font-size: 62.5%; /*es un standart por el tamaño asignado al font size uso de em y rem*/
+}
+
+
+/*Nomalizacion de enlaces*/
+a{
+    text-decoration: none; 
+    font-size: 20px;
+    color: #1111;
+}
+
+/*Normalizacion de listas*/
+ul,ol {
+    list-style-type: none ;
+}
+
+/*Normalizacion Parrafos*/
+p{
+    font-size: 18px;
+}
