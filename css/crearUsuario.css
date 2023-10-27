@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+
+/*Normalizacion del sitios*/
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; /*comportamiento de margen y rellenos*/
+}
+
+html {
+    font-size: 62.5%; /*es un standart por el tamaño asignado al font size uso de em y rem*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*Nomalizacion de enlaces*/
+a{
+    text-decoration: none; 
+    font-size: 20px;
+    color: black;
+}
+
+/*Normalizacion de listas*/
+ul,ol {
+    list-style-type: none ;
+}
+
+/*Normalizacion Parrafos*/
+p{
+    font-size: 18px;
+}
+
+main {
+    background-image: url(/patitas2.png);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    padding-top: 0.5px;
+    /*con margin:0; nos deshacemos 
+    de la barra de desplazamiento horizontal*/
+    margin:0;
+    }
+
+form {
+	background-color: #A60A43;
+	/*margin auto sirve para centrar form*/
+	margin: 0 auto;
+	/*fijar un ancho max y uno min*/
+	max-width: 800px;
+	min-width: 500px;
+	/*asignar un widht en medio de ese rango, 
+	pero nose para que es¡?je!*/
+	width: 70vw;
+	/*agregar paddign para darle espacio al boton enviar*/
+	padding-bottom: 2em; 
+	padding-right: 1em;
+	padding-left: 1em;
+    border-color: #A60A43;
+    border-radius: 2%;
+}
+/*display block hace que los elementos no queden inline */
+label{
+	display: block;
+/*para separar los elementos label*/	
+	margin: 0.5rem 0;
+    border-radius: 10%;
+}
+input{
+	width: 100%;
+    border-color: #A60A43;
+}
+h2, p{
+    color: white;
+	text-align: center;
+	margin: 1em auto;
+}
+input[type="submit"]{
+	display: block;
+	width: 60%;
+	/*para que el boton se vea mas en linea dar el mismo
+	min-height y aumentar la font*/
+	min-height: 2em;
+	font-size: 5rem;
+	/*darle un formato distinto*/
+	color:  #A60A43;
+	min-width: 300px;
+	margin: 1em auto 1em auto;
+	border-radius: 5px;
+}
