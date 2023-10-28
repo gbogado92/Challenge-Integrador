@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 /*Normalizacion del sitios*/
 *,
 *::before,
@@ -9,7 +11,9 @@
 }
 
 html {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 62.5%; /*es un standart por el tamaño asignado al font size uso de em y rem*/
+    color: #1111;
 }
 
 
@@ -17,7 +21,14 @@ html {
 a{
     text-decoration: none; 
     font-size: 20px;
-    color: #1111;
+    font-size: inherit;
+    color: inherit;
+}
+
+header,
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 /*Normalizacion de listas*/
@@ -29,4 +40,9 @@ ul,ol {
 p{
     font-size: 18px;
     
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }

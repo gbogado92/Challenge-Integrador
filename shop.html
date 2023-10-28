@@ -1,104 +1,381 @@
-<!DOCTYPE HTML>
+<!doctype HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Cat Shop</title>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="gatos, adopcion, juguetes para gatos, accesorios para gatos">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/shop.css" />
-    </head>
 
-    <body>
-        <header>
-            <img src="img/Logotype.png" width="250px">
-            <h1>BlackCatShop</h1>
+        <head>
+            <title>Index BlackCatShop</title>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="/css/shop.css" />
+            <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+            />
+        </head>
+
+  <body>
+    
+        <header>            
+            <img src="img/Logotype.png" width="200px">
+            <!-- <h1>BlackCatShop</h1> -->
             <nav>
                 <ul>
                     <li><a href="shop.html" target="_blank">SHOP</a></li>
                     <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
                     <li><a href="login.html" target="_blank">LOGIN</a></li>
-                    <li><a href="carrito.html" target="_blank"><img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-black-and-white-icon-shopping-cart-collection-image_2291887.jpg" width="25px"></a></li>
+                    <li>
+                    <a href="carrito.html" target="_blank"><img src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-black-and-white-icon-shopping-cart-collection-image_2291887.jpg" width="25px"/></a>
+                    </li>
                 </ul>
             </nav>
-        </header>
-
-
-
-        <main>
-            <section>
-                <p>En la actualidad adoptar</p>
-
-                <h1>¿Por qué adoptar un gato?</h1>
-                <p>
-                    Y como las siete vidas de un gato, te damos 7 razones para adoptar:
-                    <ol>
-                        <li>Hay muchos abandonados.</li>
-                        <li>Salvas a otro que no tiene hogar.</li>
-                        <li>Son animales excepcionales.</li>
-                        <li>Ganarás en salud.</li>
-                        <li>Es un anti-insectos natural.</li>
-                        <li>Son más independientes que otras mascotas.</li>
-                        <li>Son muy limpios.</li>
-                    </ol>
-                </p>
-
-                <h1> ¿Son los gatos beneficiosos para la salud?</h1>
-                <p>Los gatos estan ubicados en el top ten de los animales que las personas prefieren como mascotas, una de las razones para esto es su nivel de independencia y lealtad, lo que convierte a los gatos en una opción perfecta por su impacto positivo en la salud y bienestar de sus acompañantes humanos.
-                 <br>
-                    Al principio siempre se recomienda dejar que el gato explore y recorra el departamento para hacerlo suyo y  familiarizarse con él. Luego de un tiempo, cuando ya se encuentre lo suficientemente cómodo, será mejor colocar trabas en aquellos sectores a donde no queremos que abra o entre. Ya sea una habitación con objetos frágiles o cortantes, o la alacena en donde hay comida abierta, siempre es mejor mantenerlas bloqueadas en todo momento en que nosotros no estemos allí para garantizar la seguridad de nuestro amigo.  
-                </p> 
+            <div class="banner">
+                <h2>Nuevos gatitos en adopción responsable</h2>
+                <img src="https://img.freepik.com/vector-premium/patas-gato-diseno-plano-fondo-blanco-negro-fondo-pantalla-patas-gato-lindo-ilustracion-vectorial_623474-154.jpg" alt="">
                 <br>
-
-            </section>
-
-            <section>
-                <p>Veamos cual de nuestros amigos quieres que sea tu compañero en la vida:</p>
-                <div>
-                    <form action="">
-                        <label for="">
-                            <img src="img/Adopcion/Alfonsina.jpg" alt="">
-                            <br>
-                            <input type="checkbox">
-                        </label>
-                        <br>
-                        <label for="">
-                            <img src="img/Adopcion/Aria.jpg" alt="">
-                            <br>
-                            <input type="checkbox">
-                        </label>
-                        <br>
-                        <label for="">
-                            <img src="img/Adopcion/Axel-Annie-Pool-Snow-Naty.jpg" alt="">
-                            <br>
-                            <input type="checkbox">
-                        </label>
-                        <br>
-                        <label for="">
-                            <input type="button" value="Adoptar">
-                        </label>
-                    </form>
+                <a href="shop.html" target="_blank"><input type="button" value="SHOP"></a>
+            </div>
+        </header>
+  
+        <main>
+            <section class="adopciones">
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Alfonsina.jpg" alt="">
+                        <h3> Alfonsina</h3>
+                    </div>
+                    <div class="card back">
+                        <h3>Gatita de 1 año</h3>
+                        <p>Es muy juguetona y le gusta jugar con perros</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Aria.jpg" alt="">
+                        <h3>Aria</h3>
+                    </div>
+                    <div class="card back">
+                        <h3>Gatita de 5 meses</h3>
+                        <p>Tiene habitos alimenticios y de aseo ya formados</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Azabache.jpg" alt="">
+                        <h3>Azabache</h3>
+                    </div>
+                    <div class="card back">
+                        <h3>Gatita de 2 años y medio</h3>
+                        <p>Es muy juguetona, disfruta estar al sol</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Axel-Annie-Pool-Snow-Naty.jpg" alt="">
+                        <h3>Los mini cats</h3>
+                    </div>
+                    <div class="card back">
+                        <h3>Gatitos de 4 meses</h3>
+                        <p>Son amorosos y juguetones</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Braulio.jpg" alt="">
+                        <h3>Braulio</h3>
+                    </div>
 
+                    <div class="card back">
+                        <h3>Gato de 3 año</h3>
+                        <p>Es un gato muy tranquilo, le gusta jugar con el agua</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Filomena.jpg" alt="">
+                        <h3>Filomena</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 9 meses</h3>
+                        <p>Es una gran actriz le gusta posar</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Isis.jpg" alt="">
+                        <h3>Isis</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 3 años y medio</h3>
+                        <p>Le gusta estar al aire libre</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Juan.jpg" alt="">
+                        <h3>Juan</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 3 años y medio</h3>
+                        <p>Es todo un don juan, le gusta salir a pasear</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Jupiter.jpg" alt="">
+                        <h3>Jupiter</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 2 años</h3>
+                        <p>Le gusta que le acaricien la panza, es todo un amor</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Lucero.jpg" alt="">
+                        <h3>Lucero</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 1 año y medio</h3>
+                        <p>Es tranquila y con actitud muy positiva</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+
+                </div>  
+                <div class="ccard">
+
+                    <div class="card front">
+                        <img src="img/Adopcion/Maxi.jpg" alt="">
+                        <h3>Maxi</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 1 año</h3>
+                        <p>Es amante de la naturaleza y le gusta jugar con otras especies</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Pinchi.jpg" alt="">
+                        <h3>Pinchi</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 1 año</h3>
+                        <p>Le gusta comer y jugar con su bola de estambre</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Poncho.jpg" alt="">
+                        <h3>Poncho</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatio de 1 año y 9 meses</h3>
+                        <p>Curioso y jugueton</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Sansa.jpg" alt="">
+                        <h3>Sansa</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 2 años</h3>
+                        <p>Es muy cariñosa y juguetona</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Sebastian.jpg" alt="">
+                        <h3>Sebastian</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatito de 2 meses</h3>
+                        <p>Tiene buen habito de aseo y es super jugueton</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="ccard">
+
+                    <div class="card front">
+                        <img src="img/Adopcion/Sultan.jpg" alt="">
+                        <h3>Sultan</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 3 años y medio</h3>
+                        <p>Tranquilo, comelon y dormilon.</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Tina.jpg" alt="">
+                        <h3>Tina</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 6 mese</h3>
+                        <p>Ama estar acompañada y que le rasquen las orejas</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Tom.jpg" alt="">
+                        <h3>Tom</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 1 año y medio</h3>
+                        <p>Curioso y de buen corazón</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/AdopcION/Cometa.jpg" alt="">
+                        <h3>Cometa</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gatita de 1 año</h3>
+                        <p>Adora estar al sol y jugar con sus amigos</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ccard">
+                    <div class="card front">
+                        <img src="img/Adopcion/Orion.jpg" alt="">
+                        <h3>Orion</h3>
+                    </div>
+
+                    <div class="card back">
+                        <h3>Gato de 2 años</h3>
+                        <p>Disfruta trepar y recostarse a tomar el sol</p>
+                        <div class="link">
+                            <a href="#">Adoptar</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+            
+            <section class="tienda">
+                <h2>ACCESORIOS PARA GATOS</h2>
+                <h3>Cuidamos a nuestros amigos y para lograrlo te ofrecemos:</h3>
+                <div class="accesorios">
+                    
+                    <img src="img/Accesorios/RascadorGastosPedestal.webp" alt="">
+                    <img src="img/Accesorios/RascadorGatosI.webp" alt="">
+                    <img src="img/Accesorios/ratoncuerda.jpg" alt="">
+
+                
+
+                </div>
+            </section>
+
+           
+
+
+
+
+            
         </main>
 
 
+                
 
 
-             
+       
         
-
-
-        <footer>
-            <ul>
-                <li><a href="shop.html" target="_blank">SHOP</a></li>
-                <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
-                <li><a href="login.html" target="_blank">LOGIN</a></li>
-            </ul>
-            <br>
-            <img src="https://img.freepik.com/vector-premium/gato-logo-vector-animal-icono-huella-gatito-calico-logo-perro-simbolo-dibujos-animados-caracter-signo-ilustracion-garabato-diseno_6415-3174.jpg" width="100px">
-            <br>
-            <p>Todos los derechos reservados a BlackCatCorporation</p>
-        <footer>
     </body>
+
+    <footer>
+        <ul>
+          <li><a href="shop.html" target="_blank">SHOP</a></li>
+          <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+          <li><a href="login.html" target="_blank">LOGIN</a></li>
+        </ul>
+        <br />
+        <img
+          src="https://img.freepik.com/vector-premium/gato-logo-vector-animal-icono-huella-gatito-calico-logo-perro-simbolo-dibujos-animados-caracter-signo-ilustracion-garabato-diseno_6415-3174.jpg"
+          width="100px"
+        />
+        <br />
+        <p>Todos los derechos reservados a BlackCatCorporation</p>
+    </footer>
 </html>

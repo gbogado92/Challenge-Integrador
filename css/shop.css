@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/*Normalizacion del sitios*/
+*,
+*::before,
+*::after
+{
+    margin: 5px;
+    padding: 0;  
+    box-sizing: border-box; /*comportamiento de margen y rellenos*/
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62.5%; /*es un standart por el tamaño asignado al font size uso de em y rem*/
+    color: #1111;
+}
+
+/*Nomalizacion de enlaces*/
+a{
+    text-decoration: none; 
+    font-size: 20px;
+    /* font-size: inherit; */
+    color: inherit;
+}
+
+header,
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/*Normalizacion de listas*/
+ul, ol {
+    list-style-type: none;
+}
+
+/*Normalizacion Parrafos*/
+p{
+    font-size: 12px;    
+}
+
+body{
+    background:#f1faff;
+}
+
+main{
+    margin: 0; 
+}
+
+
+.adopciones{
+    display:flex ;
+    flex-wrap:wrap;
+    justify-content: end;
+    max-width: 1500px;
+    margin: 0; 
+}
+
+
+.ccard{
+    position:relative;
+    width:250px;
+    height: 250px;
+    margin: 20px;
+ }
+
+.ccard .card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.ccard .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+} 
+
+.ccard .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ccard .front h3{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.2);
+    line-height: 45px;
+    text-align: center;
+} 
+
+.ccard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(80, 1, 1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10 px #000;
+}
+
+.ccard .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 5px;
+}
+
+.ccard .back .link a{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#83807a;
+    border-color: #131010;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+}
+
+.ccard .back h3{
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.ccard .back p{
+    letter-spacing: 1px;
+    color: white;
+}
+
+.ccard:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.ccard:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.tienda{
+    max-width: 1500px;
+    padding: 30px;
+    background-color: rgb(216, 211, 210);
+}
+
+.tienda h2 {
+    font-family: Arial rgb(15, 15, 15); 
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+    background: #202020;  
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;     
+    color: transparent; 
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3); 
+}
+
+.tienda h3 {
+    background-color: brown;
+    font-size: 20;
+}
+
+.accesorios{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+
