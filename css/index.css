@@ -1,7 +1,33 @@
 .navbar-nav .nav-link:hover {
   color: #A60A43;
+}
+
+main {
+  margin-top: 125px; 
+}
+
+.accordion-button {
+  color: #A60A43 !important; 
   font-weight: bold;
 }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #A60A43 !important; 
+    color: white !important; 
+  font-weight: normal;
+  }
+
+  .accordion-button:focus {
+    border: none !important; 
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+.custom-card {
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 .list-inline a {
   text-decoration: none;
@@ -10,5 +36,28 @@
 
 .list-inline a:hover {
   color: #A60A43;
-  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .embed-responsive-16by9 iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 960px) {
+  .embed-responsive-16by9 iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .embed-responsive-16by9 iframe {
+    width: 100%;
+    height: auto;
+  }
 }
