@@ -1,7 +1,7 @@
 new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
-    perView: 4,
+    perView: 6,
     autoplay: 2500,
     hoverpause: true,
     gap:30,
