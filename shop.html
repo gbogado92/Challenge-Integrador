@@ -7,6 +7,8 @@
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="stylesheet" href="/css/shop.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
             <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -30,7 +32,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="img/Logotype.png" width="150px" alt="Logo" />
+                        <img src="img/Logotype.png" width="140px" alt="Logo" />
                     </a>
                     <button
                         class="navbar-toggler"
@@ -60,20 +62,7 @@
                         </div>
                     </div>
             </nav>
-  
-            <!-- <div class="banner">
-            <h2>Nuevos gatitos en adopcion responsable</h2>
-            <img
-                src="https://img.freepik.com/vector-premium/patas-gato-diseno-plano-fondo-blanco-negro-fondo-pantalla-patas-gato-lindo-ilustracion-vectorial_623474-154.jpg"
-                alt=""
-            />
-            <br />
-            <a href="shop.html" target="_blank"
-                ><input type="button" value="SHOP"
-            /></a>
-            </div> -->
-      </header>
-  
+        </header>
         <main>
             <div class="tadopciones">
                 <h3>Somos tiernos y juguetones</h3>
@@ -295,9 +284,7 @@
                         <div class="link">
                             <a href="#">Adoptar</a>
                         </div>
-                        
                     </div>
-
                 </div>
                 <div class="ccard">
 
@@ -319,7 +306,6 @@
                         <img src="img/Adopcion/Tina.jpg" alt="">
                         <h3>Tina</h3>
                     </div>
-
                     <div class="card back">
                         <h3>Gatita de 6 mese</h3>
                         <p>Ama estar acompañada y que le rasquen las orejas</p>
@@ -334,14 +320,12 @@
                         <img src="img/Adopcion/Tom.jpg" alt="">
                         <h3>Tom</h3>
                     </div>
-
                     <div class="card back">
                         <h3>Gato de 1 año y medio</h3>
                         <p>Curioso y de buen corazón</p>
                         <div class="link">
                             <a href="#">Adoptar</a>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="ccard">
@@ -349,22 +333,19 @@
                         <img src="img/AdopcION/Cometa.jpg" alt="">
                         <h3>Cometa</h3>
                     </div>
-
                     <div class="card back">
                         <h3>Gatita de 1 año</h3>
                         <p>Adora estar al sol y jugar con sus amigos</p>
                         <div class="link">
                             <a href="#">Adoptar</a>
                         </div>
-                        
-                    </div>
+                  </div>
                 </div>
                 <div class="ccard">
                     <div class="card front">
                         <img src="img/Adopcion/Orion.jpg" alt="">
                         <h3>Orion</h3>
                     </div>
-
                     <div class="card back">
                         <h3>Gato de 2 años</h3>
                         <p>Disfruta trepar y recostarse a tomar el sol</p>
@@ -375,107 +356,126 @@
                 </div>
             </section>
 
-            <section class="ec">
-                <div class="ttienda">
-                    <h1>ACCESORIOS PARA GATOS</h1>
-                    <h3>Cuidamos a nuestros amigos y para lograrlo te ofrecemos:</h3>
-                </div>
-                           
-                <div class="tienda">
-                    <div class="accesorios">
-                        <img src="img/Accesorios/RascadorGastosPedestal.webp" alt="">
-                        <h2>Rascador de gatos con pedestal</h2>
-                        <p>Precio: 9.000,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a> 
+            <section class="slider glide">
+                <h2 class="slider-title"> Accesorios para consentir a tu nuevo Amigo</h2>
+                <div class="glide__track" data-glide-el="track">
+                    <div class="slider-content glide__slides">  
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item">
+                                <img src="img/Accesorios/RascadorGastosPedestal.webp" alt="">
+                            </picture>    
+                            <div class="titem">
+                                <h2>Rascador de gatos con pedestal</h2>
+                                <p>Precio: 9.000,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a> 
+                            </div>  
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item ">
+                                <img src="img/Accesorios/RascadorGatosI.webp" alt="">
+                            </picture>
+                            <div class="titem">       
+                                <h2>Rascador para gatos estructurado</h2>
+                                <p>Precio: 13.500,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a> 
+                            </div> 
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item ">
+                                <img src="img/Accesorios/ratoncuerda.jpg" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Juguete Ratón de cuerda</h2>
+                                <p>Precio: 1.500,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a>   
+                            </div>
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item ">
+                                <img src="img/Accesorios/cama.jpg" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Cama suave de 50 cm</h2>
+                                <p>Precio: 11.473,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a>
+                            </div>
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item ">
+                                <img src="img/Accesorios/camacueva.webp" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Moderna Casa Donut Blanca con Cojín</h2>
+                                <p>Precio: 22.693,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a>
+                            </div>
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item ">
+                                <img src="img/Accesorios/bolsoviaje.webp" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Freedog Transportín Fly de Tela Negro</h2>
+                                <p>Precio: 12.930,00</p>
+                                <a href="carrito.html">Añadir al carrito</a>  
+                            </div>
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item">
+                                <img src="img/Accesorios/correarosa.jpg" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Trixie Collar Reflectante de Nylon</h2>
+                                <p>Precio: 1598,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a>  
+                            </div>
+                        </div>
+                        <div class="slider-items glide__slide">
+                            <picture class="slider-item">
+                                <img src="img/Accesorios/arnesgatos.jpg" alt="">
+                            </picture>
+                            <div class="titem">
+                                <h2>Trixie Set Gatos, Nylon Varios Colores</h2>
+                                <p>Precio: 4.333,00$</p>
+                                <a href="carrito.html">Añadir al carrito</a>  
+                            </div>
+                        </div>                          
                     </div>
-                    <div class="accesorios">
-                        <img src="img/Accesorios/RascadorGatosI.webp" alt="">
-                        <h2>Rascador para gatos estructurado</h2>
-                        <p>Precio: 13.500,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a> 
-                    </div>  
-                    <div class="accesorios">
-                        <img src="img/Accesorios/ratoncuerda.jpg" alt="">
-                        <h2>Juguete Ratón de cuerda</h2>
-                        <p>Precio: 1.500,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a>   
-                    </div>
-                    <div class="accesorios">
-                        <img src="img/Accesorios/cama.jpg" alt="">
-                        <h2>Cama suave de 50 cm</h2>
-                        <p>Precio: 11.473,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a>  
-                    </div>
-                    <div class="accesorios">
-                        <img src="img/Accesorios/camacueva.webp" alt="">
-                        <h2>Moderna Casa Donut Blanca con Cojín</h2>
-                        <p>Precio: 22.693,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a> 
-                    </div>
-                    <div class="accesorios">
-                        <img src="img/Accesorios/bolsoviaje.webp" alt="">
-                        <h2>Freedog Transportín Fly de Tela Negro</h2>
-                        <p>Precio: 12.930,00</p>
-                        <a href="carrito.html">Añadir al carrito</a> 
-                    </div>  
-                    <div class="accesorios">
-                        <img src="img/Accesorios/correarosa.jpg" alt="">
-                        <h2>Trixie Collar Reflectante de Nylon</h2>
-                        <p>Precio: 1598,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a>  
-                    </div>
-                    <div class="accesorios">
-                        <img src="img/Accesorios/arnesgatos.jpg" alt="">
-                        <h2>Trixie Set Gatos, Nylon Varios Colores</h2>
-                        <p>Precio: 4.333,00$</p>
-                        <a href="carrito.html">Añadir al carrito</a>  
-                    </div>
-                </div>
+                </div>   
             </section>
-
-           
-
-
-
-
-            
         </main>
-
-
-                
-
-
        
-        
-    </body>
+        <footer class="bg-dark text-center">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                        <a href="index.html" target="_blank">Inicio</a>
+                        </li>
+                        <li class="list-inline-item">
+                        <a href="contacto.html" target="_blank">CONTACTO</a>
+                        </li>
+                        <li class="list-inline-item">
+                        <a href="login.html" target="_blank">LOGIN</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-12">
+                    <a class="nav-link" href="carrito.html" target="_blank">
+                        <i class="fas fa-paw fa-xl text-white"></i>
+                    </a>
+                    </div>
+                    <div class="col-lg-12">
+                    <p class="mt-3 text-white">
+                        &copy; 2023 BlackCatCorporation. Todos los derechos reservados.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="js/shop.js"></script>
 
-    <footer class="bg-dark text-center">
-        <div class="container p-4">
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="index.html" target="_blank">Inicio</a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="contacto.html" target="_blank">CONTACTO</a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="login.html" target="_blank">LOGIN</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-12">
-              <a class="nav-link" href="carrito.html" target="_blank">
-                <i class="fas fa-paw fa-xl text-white"></i>
-              </a>
-            </div>
-            <div class="col-lg-12">
-              <p class="mt-3 text-white">
-                &copy; 2023 BlackCatCorporation. Todos los derechos reservados.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </body>
 </html>
