@@ -23,6 +23,7 @@ ul,ol {
 
 p{
     font-size: 18px;
+    padding: 0;
     color: white;
 }
 
@@ -44,18 +45,28 @@ nav {
     background: transparent;
 }
 
-footer {
-    position: end;
-    align-content: center;
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
     background-color: #bf4e78;
-    padding: auto;
-}
-
-.lista1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.lista1 a {
+.contenedor-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.links a {
     margin: 0px 15px;
     padding: 5px 10px;
     color: black;
@@ -65,7 +76,7 @@ footer {
     transition: all .50 ease;
 }
 
-.lista1 a:hover {
+.links a:hover {
     color: #bf4e78;
     border-bottom: 3px solid #bf4e78;
 }
@@ -86,6 +97,7 @@ footer {
     transform: scale(1.05);
     border: 3px solid #bf4e78;
 }
+
 .form {
     width: 400px;
     background: #778899;
@@ -135,12 +147,15 @@ footer {
     font-size: 16px;
 }
 
-.lista2 {
+.contenedor-pie {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-.lista2 a {
+.links2 a {
     margin: 0px 15px;
     padding: 5px 10px;
     color: black;
@@ -150,7 +165,7 @@ footer {
     transition: all .50 ease;
 }
 
-.lista2 a:hover {
+.links2 a:hover {
     color: black;
     border-bottom: 3px solid black;
 }
