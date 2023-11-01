@@ -5,7 +5,7 @@
 *::before,
 *::after
 {
-    margin: 5px;
+    margin: 4px;
     padding: 0;  
     box-sizing: border-box; /*comportamiento de margen y rellenos*/
 }
