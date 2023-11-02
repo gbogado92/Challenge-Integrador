@@ -4,13 +4,15 @@ new Glide('.glide', {
     perView: 5,
     autoplay: 2500,
     hoverpause: true,
-    gap:80,
-    breakpoint:{
-      991:{
-            perview: 2
-         },
-        768:{
-            perview: 1
-       }
+    gap:6,
+    breakpoints:{
+        600:{
+            perView: 1
+        },
+
+        1024:{
+            perView: 2
+        }
+       
     }
-}).mount()
+}).mount();

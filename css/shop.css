@@ -12,7 +12,7 @@
 
 html {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 62.5%; /*es un standart por el tamaño asignado al font size uso de em y rem*/
+    /* font-size: 62.5%; es un standart por el tamaño asignado al font size uso de em y rem */
     color: #1111;
 }
 
@@ -24,11 +24,11 @@ a{
     color: inherit;
 }
 
-header,
+/* header,
 footer{
     font-family: 'Roboto', sans-serif;
     /* color: white; */
-}
+} */
 
 /*Normalizacion de listas*/
 ul, ol {
@@ -299,6 +299,7 @@ main{
 } */
 
 
+
 .slider{
     display: flex;
     flex-direction: column;
@@ -333,54 +334,51 @@ main{
     animation: textclip 5s linear infinite;
     /* display:grid;  */
             
-    }
+}
 
-        @keyframes textclip {
-        to {
-            background-position: 200% center;
-        }
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .slider-content{
     display: flex;
+    width: 250px;
+    height: 450px;
+    
 }
-
-
-.slider-items{
-    max-width:250px;
-     
-}
-
-.slider-item{
-     
- }
 
 .slider-item img{
-    width: 180px;
-    height: 150px;
+    width: 95%;
+    height: 70%;
     border-radius: 5px;
     color: #927777;
 }
 
 
-
 .titem{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-16);  
-
+    text-align: center;
 }
 
 .titem h2{
-    font-size: 12px;
+   font-size: 18px;
 }
 
 .titem p{
-
+    font-size: 18px;
+    
+  
 }
 
 .titem a{
-    font-size: 12px;
-   
- } 
+    font-size:medium;
+    ;
+ }
+
+
+@media screen and (max-widht:600px){
+    .slider{
+        position: flex;
+    }
+ }
