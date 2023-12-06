@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/*Normalizacion del sitios*/
+*,
+*::before,
+*::after
+{
+    margin: 0px;
+    padding: 0;  
+    box-sizing: border-box; /*comportamiento de margen y rellenos*/
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 62.5%; es un standart por el tamaño asignado al font size uso de em y rem */
+    color: #1111;
+}
+
+/*Nomalizacion de enlaces*/
+a{
+    text-decoration: none; 
+    font-size: 20px;
+    /* font-size: inherit; */
+    color: inherit;
+}
+
+
+/*Normalizacion de listas*/
+ul, ol {
+    list-style-type: none;
+}
+
+body{
+    background:#f1faff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A60A43;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-link a {
+    font-size: 15px;
+}
+
+  main {
+    margin-top: 125px; 
+  }
+
+@media (min-width: 768px) {
+    .embed-responsive-16by9 iframe {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media (min-width: 960px) {
+    .embed-responsive-16by9 iframe {
+      width: 400px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .embed-responsive-16by9 iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
