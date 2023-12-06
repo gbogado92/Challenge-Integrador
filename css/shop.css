@@ -5,7 +5,7 @@
 *::before,
 *::after
 {
-    margin: 4px;
+    margin: 0px;
     padding: 0;  
     box-sizing: border-box; /*comportamiento de margen y rellenos*/
 }
@@ -27,16 +27,13 @@ a{
 /* header,
 footer{
     font-family: 'Roboto', sans-serif;
-    /* color: white; */
-} */
+    /* color: white; 
+} 
 
 /*Normalizacion de listas*/
 ul, ol {
     list-style-type: none;
 }
-
-
-
 
 body{
     background:#f1faff;
@@ -48,7 +45,7 @@ body{
     font-size: 15px;
 }
 
-.nav-link a.{
+.nav-link a {
     font-size: 15px;
 }
   
@@ -64,7 +61,7 @@ body{
 }
 
 main{
-    padding:0px;
+    padding:30px;
     margin:10%;
 }
 
