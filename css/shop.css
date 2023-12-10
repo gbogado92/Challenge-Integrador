@@ -54,7 +54,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ;
 }
 
 html{
@@ -81,6 +80,10 @@ ul,ol {
 
 p{
     font-size: 1.8em;
+}
+
+img{
+    width: 100%;
 }
 
 .container{
@@ -153,41 +156,103 @@ header {
     background-color: var(--primary-900);
 }
 
+/*Main*/
+.main-container{
+       display: flex;
+       
+}
+ 
 /*aside*/
-
 .buscador{
-    /* float: left;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 2px;
-    background-color: #30343f; */
-    
+    margin-top: 150px;
+    margin-left: 110px;
+    margin-right: 30px;
+    display: flex;
     
 }
 
 .buscador-form{
-
-}
-
-
-/*menu*/
-.main-container{
     display: flex;
-      
+    flex-direction: column;
+    gap: var(--spacing-28);
 }
 
+.buscador__name{
+    font-size: var(--font-medium);
+    font-weight: 500;  
+}
+
+.buscador__box{
+    border-radius: 2px;
+    padding: var(--spacing-8);
+    font-size: var(--font-small);
+}
+
+.buscador__box__precio{
+    width:30px ;
+    align-content: space-between;
+}
 
 /*Products*/
-.collection-container{
-      display: grid;
+.product{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-36);
+    margin-top: 150px;
 }
 
-.card-item{
-    
+.product__collection{
+    display: flex;     
+
+}      
+
+.product__item{   
+    display: flex;  
+    gap: var(--spacing-24);
+       
 }
 
-.card-item__content{
-    
+.card-item__cover{
+    display: flex;
+}
+
+.card-item__cover .card-item__img--back{
+    display: none;
+}
+
+.card-item__cover:hover .card-item__img--back{
+    display: block;
+}
+
+.card-item__cover:hover .card-item__img--front{
+    display: none;
+}
+
+.card-item__content{ 
+   display: flex;
+   flex-direction: column;
+   gap:var(--spacing-12); 
+   padding: var(--spacing-16);     
+}
+
+.card-item__license{
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.card-item__name{
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+.card-item__price{
+    font-size: var(--font-small);
+}
+
+.card-item__promo{
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    font-weight: 700;
 }
 
 /*Footer*/
