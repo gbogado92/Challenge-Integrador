@@ -17,7 +17,7 @@
 --dark-500: rgb(31,31,31,0.5);
 --dark-300: rgb(31,31,31,0.3);
 
---dark-hg-solid: #30343f;
+--dark-bg-solid: #30343f;
 --light-bg-solid: #fafafa;
 --light-font-solid: #ffffff;
 
@@ -54,6 +54,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: ;
 }
 
 html{
@@ -82,10 +83,6 @@ p{
     font-size: 1.8em;
 }
 
-img{
-    width: 100%;
-}
-
 .container{
     max-width:1200px;
     margin: 0 auto;
@@ -95,7 +92,7 @@ img{
 /*Header*/
 
 header {
-    background-color: var(--dark-hg-solid);
+    background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
 }
 
@@ -142,7 +139,7 @@ header {
     display: none;
     width: 300px;
     position: absolute;
-    background-color: var(--dark-hg-solid)
+    background-color: var(--dark-bg-solid)
 }
 
 .submenu__link{
@@ -156,8 +153,58 @@ header {
     background-color: var(--primary-900);
 }
 
+/*aside*/
+
+.buscador{
+    /* float: left;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 2px;
+    background-color: #30343f; */
+    
+    
+}
+
+.buscador-form{
+
+}
 
 
+/*menu*/
+.main-container{
+    display: flex;
+      
+}
+
+
+/*Products*/
+.collection-container{
+      display: grid;
+}
+
+.card-item{
+    
+}
+
+.card-item__content{
+    
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.footer__copy{
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
+
+
+/*Animation*/
 @media screen and (max-widht:600px){
     .slider{
         position: flex;
