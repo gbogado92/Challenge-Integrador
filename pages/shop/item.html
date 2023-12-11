@@ -1,1 +1,177 @@
-git
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Funkoshop</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="/css/item.css" /> 
+    </head>
+    <body>
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/index.html">
+                        <img src="/img/logo_light_horizontal.svg" alt="">
+                    </a>  
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Llaveros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                    </li class="navbar__item">
+                    <li>
+                        <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
+                    </li class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__cart" href="/pages/carrito.html"></a>
+                            <img src="/img/icons/cart-icon.svg" alt="icono">
+                    </li>
+                </ul>
+            </nav>  
+        </header>
+        <main class="main-container">
+            <section class="item container">
+                <article class="card-item">
+                    <a class="card-item_link" href="">
+                        <picture class="card-item_cover">
+                            <img class="card-item__img--front" src="/img/harry-potter/harry-1.webp" alt="Figura coleccionable Funko de Harry Potter">
+                            <!-- <img class="card-item__img--back" src="/img/harry-potter/harry-box.webp" alt="Figura coleccionable Funko Harry Potter en la caja"> -->
+                        </picture>
+                        <div class="card-item_content">
+                            <p class="card-item_license">Harry Potter</p>
+                            <h4 class="card-item_name">
+                                HARRY POTTER
+                            </h4>
+                            <p class="card-item_price">$ 14.000,00</p>
+                            <p class="card-item_promo">3 Cuotas sin interes</p>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="slider container glide">
+                <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="slider__items glide__slides">
+                        <li class="slider__item  glide__slide">
+                            <article class="card-item">
+                                <a class="card-item__link" href="">
+                                    <picture class="card-item__cover">
+                                        <span class="card-item__tag">Nuevo</span>
+                                        <img class="card-item__img--front" src="/img/harry-potter/harry-1.webp" alt="Figura coleccionable Funko de Harry Potter">
+                                        <img class="card-item__img--back" src="/img/harry-potter/harry-box.webp" alt="Figura coleccionable Funko Harry Potter en la caja">
+                                    </picture>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">Harry Potter</p>
+                                        <h4 class="card-item__name">
+                                            HARRY POTTER
+                                        </h4>
+                                        <p class="card-item__price">$ 14.000,00</p>
+                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="product__item  glide__slide">
+                            <article class="card-item">
+                                <a class="card-item__link" href="">
+                                    <picture class="card-item__cover">
+                                        <span class="card-item__tag">Nuevo</span>
+                                        <img class="card-item__img--front" src="/img/harry-potter/hermione-1.webp" alt="Figura coleccionable Funko de Hermione Granger">
+                                        <img class="card-item__img--back" src="/img/harry-potter/hermione-box.webp" alt="Figura coleccionable Funko de Hermione Granger en la caja">
+                                    </picture>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">Harry Potter</p>
+                                        <h4 class="card-item__name">
+                                            HERMAIONI GRANGER
+                                        </h4>
+                                        <p class="card-item__price">$ 14.000,00</p>
+                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="product__item glide__slide">
+                            <article class="card-item">
+                                <a class="card-item__link" href="">
+                                    <picture class="card-item__cover">
+                                        <span class="card-item__tag">Nuevo</span>
+                                        <img class="card-item__img--front" src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna">
+                                        <img class="card-item__img--back" src="/img/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Luna en la caja">
+                                    </picture>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">Harry Potter</p>
+                                        <h4 class="card-item__name">
+                                            LUNA LOVEGOOD
+                                        </h4>
+                                        <p class="card-item__price">$ 14.000,00</p>
+                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<<"><iconify-icon icon="ic:sharp-chevron-left"></iconify-icon></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">>"><iconify-icon icon="ic:sharp-chevron-right"></iconify-icon></button>
+                  </div>
+            </section>
+        </main>
+        <footer class="footer" >
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./shop.html">SHOP</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/pages/Admin/crearUsuario.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                    </li>       
+                </ul>
+                <picture>
+                    <img src="/img/isotype.svg" alt="Isotipo de la marca">
+                </picture>
+            </nav>
+            
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 3,
+                gap: 30,
+                breakpoint:{
+                    991:{
+                        perview: 2 
+                    },
+                    768:{
+                        perview: 1 
+                    }
+                }
+            }).mount();
+        </script>
+    </body>
+</html>
