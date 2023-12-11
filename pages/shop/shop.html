@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/shop.css" />     
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     </head>
   <body>
         <header>
@@ -55,7 +55,11 @@
                     </div>
                     <div class="buscador-orden">
                         <label class="buscador__name" for="search">ORDENAR POR</label>
-                        <input class="buscador__box" type="search" name="Ordenar por" placeholder="Mayor a menor">
+                        <select class="buscador__box with-icon" name="Oreden">
+                        <option value="1">De menor a mayor precio</option> 
+                        <option value="2">De mayor a menor precio</option>
+                        </select>
+
                         
                     </div>
                     <div class="buscador-precio">

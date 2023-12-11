@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" />
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/css/contacto.css" /> 
 </head>
 
 <body>
     <header>
-        <img src="https://img.freepik.com/vector-premium/gato-logo-vector-animal-icono-huella-gatito-calico-logo-perro-simbolo-dibujos-animados-caracter-signo-ilustracion-garabato-diseno_6415-3174.jpg"
-            width="100px">
-        <h1>BlackCatShop</h1>
-        <nav>
-            <ul>
-                <li><a href="shop.html" target="_blank">SHOP</a></li>
-                <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
-                <li><a href="login.html" target="_blank">LOGIN</a></li>
-                <li><a href="carrito.html" target="_blank"><img
-                            src="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-black-and-white-icon-shopping-cart-collection-image_2291887.jpg"
-                            width="25px"></a></li>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img src="/img/logo_light_horizontal.svg" alt="">
+                </a>  
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
+                </li class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="/pages/carrito.html"></a>
+                        <img src="/img/icons/cart-icon.svg" alt="icono">
+                </li>
             </ul>
-        </nav>
+        </nav>  
     </header>
     <h1>Contacto</h1>
     <form action="">
@@ -43,18 +65,29 @@
             <input type="button" value="Enviar">
         </label>
     </form>
-    <footer>
-        <ul>
-            <li><a href="shop.html" target="_blank">SHOP</a></li>
-            <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
-            <li><a href="login.html" target="_blank">LOGIN</a></li>
-        </ul>
-        <br>
-        <img src="https://img.freepik.com/vector-premium/gato-logo-vector-animal-icono-huella-gatito-calico-logo-perro-simbolo-dibujos-animados-caracter-signo-ilustracion-garabato-diseno_6415-3174.jpg"
-            width="100px">
-        <br>
-        <p>Todos los derechos reservados a BlackCatCorporation</p>
-        <footer>
+    <footer class="footer" >
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/Admin/crearUsuario.html">REGISTRARSE</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                </li>       
+            </ul>
+            <picture>
+                <img src="/img/isotype.svg" alt="Isotipo de la marca">
+            </picture>
+        </nav>
+        
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
+    </footer>
 </body>
 
 </html>

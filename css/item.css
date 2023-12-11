@@ -87,7 +87,7 @@ img{
 }
 
 .container{
-    max-width:1200px;
+    max-width:1400px;
     margin: 0 auto;
 }
 
@@ -271,8 +271,29 @@ iconify-icon{
     }
     
 }
-@media screen and (max-widht:600px){
-    .slider{
-        position: flex;
+@media (min-width: 768px) {
+    .embed-responsive-16by9 iframe {
+      width: 300px;
+      height: 300px;
     }
- }
+  }
+  @media (min-width: 960px) {
+    .embed-responsive-16by9 iframe {
+      width: 400px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .embed-responsive-16by9 iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+ 
