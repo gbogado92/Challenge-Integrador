@@ -167,13 +167,17 @@ header {
     margin-bottom: var(--spacing-24);
 }
 
+.main-form{
+    
+}
+
 .main-form__options{
-    padding: var(--spacing-8);
+    padding: var(--spacing-16);
     font-size: small;
     
 }
 
-.main-form__product-name-description{
+.main-form__product-name-description__label{
     padding: var(--spacing-16);
     font-size: small;
 }
@@ -181,6 +185,11 @@ header {
 .main-form__product-name-description__input{
     border: none;
     border-bottom:2px solid #FF3333;
+}
+
+.main-textarea{
+    padding: var(--spacing-16);
+    ;
 }
 
 .main-form__inputs{

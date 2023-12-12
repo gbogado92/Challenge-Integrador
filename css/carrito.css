@@ -87,7 +87,7 @@ img{
 }
 
 .container{
-    max-width:1400px;
+    max-width:1200px;
     margin: 0 auto;
 }
 
@@ -158,88 +158,41 @@ header {
 
 /*Main*/
 .main-container{
-       display: flex;       
+    padding: var(--spacing-68) var(--spacing-128);
 }
  
-
-
-/*Products*/
-.product{
-    flex-grow: 1;
+.catalogue-title{
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-36); 
-} 
-
-.product__collection{
-    display: flex;  
-    padding: var(--spacing-36);
-    margin:var(--spacing-68) auto;
-} 
-
-.product__item{   
-    display: flex;  
-    gap: var(--spacing-24);      
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    margin-bottom: var(--spacing-24);
 }
 
+.catalogue-resumen{
+    padding-left: 80%;
+    display: grid;
+    column-gap: 58px;
+    grid-template-columns: repeat(1, 1fr);
+}
 
-.card-item__cover{
+.resumen-title{
     display: flex;
-    position:relative;   
-}
-
-.card-item__tag{
-    font-size: var(--font-xsmall);
-    text-transform: uppercase;
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
-    padding: var(--spacing-8) var(--spacing-12);
-    position: absolute;
-    right: 0;
-   }
-
-.card-item__cover .card-item__img--back{
-    display: none;
-}
-
-.card-item__cover:hover .card-item__img--back{
-    display: block;
-}
-
-.card-item__cover:hover .card-item__img--front{
-    display: none;
-}
-
-.card-item__content{ 
-   display: flex;
-   flex-direction: column;
-   gap:var(--spacing-8); 
-   padding: var(--spacing-12);     
-}
-
-.card-item__license{
-    font-size: var(--font-small);
-    font-weight: 500;
-}
-
-.card-item__name{
-    font-size: var(--font-medium);
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
     font-weight: 700;
-}
-.card-item__price{
-    font-size: var(--font-small);
-}
-
-.card-item__promo{
-    font-size: var(--font-xsmall);
-    color: var(--secondary-solid);
-    font-weight: 700;
+    margin-bottom: var(--spacing-24);
+    
 }
 
 /*Footer*/
 .footer{
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
+    position: absolute;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .footer__copy{
