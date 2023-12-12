@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img src="/img/logo_light_horizontal.svg" alt="">
+                </a>  
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="/pages/shop/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navbar__link" href="./admin.html">ADMIN</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="/index.html">SALIR</a>
+                </li class="navbar__item">
+            </ul>
+        </nav> 
+    </header>
+
+    <main class="main container">
+        <div class="container_search">
+            <label for="buscar"><img src="/img/icons/search_icon.svg" alt="icono lupa-buscar"
+                    class="icon_search" /></label>
+            <input type="text" id="buscar" size="100" placeholder="  código, nombre o categoría" />
+        </div>
+        <div class="container_title">
+            <h2 class="admin_title">LISTADO DE PRODUCTOS</h2>
+            <div class="admin_agregar">
+                <p class="admin_add">AGREGAR</p>
+                <button class="admin_button">+</button>
+            </div>
+        </div>
+        <section class="admin_table">
+            
+            <h3 class="admin_table-id">ID</h3>
+            <h3 class="admin_table-codigo">Código</h3>
+            <h3 class="admin_table-nombre">Nombre del producto</h3>
+            <h3 class="admin_table-categoria">Categoría</h3>
+               
+
+            <p class="admin_table-id">1</p>
+            <p class="admin_table-codigo">STW001001</p>
+            <p class="admin_table-nombre">Baby Yoda Blueball</p>
+            <p class="admin_table-categoria">STAR WARS</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+            
+            <!-- fila 2 -->
+            <p class="admin_table-id">2</p>
+            <p class="admin_table-codigo">STW001002</p>
+            <p class="admin_table-nombre">Boba Fett Fighter</p>
+            <p class="admin_table-categoria">STAR WARS</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            <!-- fila 3 -->
+            <p class="admin_table-id">3</p>
+            <p class="admin_table-codigo">STW001003</p>
+            <p class="admin_table-nombre">Luke Skylwalker & Grogu</p>
+            <p class="admin_table-categoria">STAR WARS</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            <!-- fila 4 -->
+            <p class="admin_table-id">4</p>
+            <p class="admin_table-codigo">STW001004</p>
+            <p class="admin_table-nombre">Stormtrooper Lightsaber</p>
+            <p class="admin_table-categoria">STAR WARS</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            <!-- fila 5 -->
+            <p class="admin_table-id">5</p>
+            <p class="admin_table-codigo">PKM001001</p>
+            <p class="admin_table-nombre">Charmander Smiley</p>
+            <p class="admin_table-categoria">POKEMON</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            <p class="admin_table-id">6</p>
+            <p class="admin_table-codigo">PKM001002</p>
+            <p class="admin_table-nombre">Dragonite Hi!</p>
+            <p class="admin_table-categoria">POKEMON</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+                       <p class="admin_table-id">7</p>
+            <p class="admin_table-codigo">PKM001003</p>
+            <p class="admin_table-nombre">Pidgeotto Flying</p>
+            <p class="admin_table-categoria">POKEMON</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            
+            <p class="admin_table-id">8</p>
+            <p class="admin_table-codigo">PKM001004</p>
+            <p class="admin_table-nombre">Pikachu Smiley</p>
+            <p class="admin_table-categoria">POKEMON</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+           
+            <p class="admin_table-id">9</p>
+            <p class="admin_table-codigo">PKM001005</p>
+            <p class="admin_table-nombre">Vulpix Fancy</p>
+            <p class="admin_table-categoria">POKEMON</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+           
+            <p class="admin_table-id">10</p>
+            <p class="admin_table-codigo">HPT001001</p>
+            <p class="admin_table-nombre">Harry Potter & Hegwid</p>
+            <p class="admin_table-categoria">HARRY POTTER</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            
+            <p class="admin_table-id">11</p>
+            <p class="admin_table-codigo">HPT001002</p>
+            <p class="admin_table-nombre">Herminione Ball Dress</p>
+            <p class="admin_table-categoria">HARRY POTTER</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            
+            <p class="admin_table-id">12</p>
+            <p class="admin_table-codigo">HPT001003</p>
+            <p class="admin_table-nombre">Luna Lovegood Lion Mask</p>
+            <p class="admin_table-categoria">HARRY POTTER</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+
+            
+            <p class="admin_table-id">13</p>
+            <p class="admin_table-codigo">HPT001004</p>
+            <p class="admin_table-nombre">Snape Patronus</p>
+            <p class="admin_table-categoria">HARRY POTTER</p>
+            <iconify-icon icon="mdi:pencil" width="35" class="admin_table-lapiz"></iconify-icon>
+            <iconify-icon icon="mdi:trash-can" width="35" class="admin_table-basurero"></iconify-icon>
+        </section>
+    </main>
+
+    <footer class="footer" >
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/createUser.html">REGISTRARSE</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="/pages/shop/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
+                </li>       
+            </ul>
+            <picture>
+                <img src="/img/isotype.svg" alt="Isotipo de la marca">
+            </picture>
+        </nav>
+        
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+</body>
+
+</html>

@@ -176,7 +176,16 @@ header {
   text-transform: uppercase;
 }
 
+ /*Footer*/
+ .footer{
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-36);
+}
 
+.footer__copy{
+  margin-top: var(--spacing-36);
+  text-align: center;
+}
 
 @media (min-width: 768px) {
     .embed-responsive-16by9 iframe {
@@ -202,13 +211,4 @@ header {
     }
   }
 
-  /*Footer*/
-.footer{
-  background-color: var(--dark-bg-solid);
-  padding: var(--spacing-36);
-}
-
-.footer__copy{
-  margin-top: var(--spacing-36);
-  text-align: center;
-}
+ 

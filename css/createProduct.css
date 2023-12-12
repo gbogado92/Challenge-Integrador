@@ -159,107 +159,97 @@ header {
 }
 
 /*Main*/
-.main-container{
- 
-}
-  
-.main_register {
-  margin-top: var(--spacing-20);
-  margin-bottom: var(--spacing-20);
-  gap: var(--spacing-24);
+.main-title{
+    display: flex;
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    margin-bottom: var(--spacing-24);
 }
 
-.register_title {
-  display: flex;
-  justify-content: center;
-  font-family: var(--alternative-font);
-  font-size: var(--font-jumbo);
-  font-weight: 700;
-  margin-bottom: var(--spacing-24);
+.main-form__options{
+    padding: var(--spacing-8);
+    font-size: small;
+    
 }
 
-.register_subheader {
-  display: flex;
-  justify-content: center;
-  font-family: var(--alternative-font);
-  font-size: var(--font-xlarge);
-  font-weight: 500;
-  margin-bottom: var(--spacing-24);
+.main-form__product-name-description{
+    padding: var(--spacing-16);
+    font-size: small;
 }
 
-.register_form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: baseline;
-  padding-inline: 25%;
-  gap: var(--spacing-24);
+.main-form__product-name-description__input{
+    border: none;
+    border-bottom:2px solid #FF3333;
 }
 
-.register_input-red_line{
-  border: none;
-  border-bottom:2px solid #FF3333;
+.main-form__inputs{
+    padding: var(--spacing-16);
+    font-size: small;  
 }
 
-.register_label-contraseña{
-  font-family: var(--base-font);
-  font-size: var(--font-large);
+.main-form__inputs--input{
+    border: none;
+    border-bottom:2px solid #FF3333;
 }
 
-.login_ingresar-button{
-  background-color: var(--primary-solid);
-  border:none;
-  font-size: var(--font-xsmall);
-  color: var(--light-bg-solid) ;
-
+.main-form__promo{
+    padding: var(--spacing-16);
+    font-size: small;
 }
 
-.register_form div {
-  grid-column: 1 / 3;
-  gap: var(--spacing-16);
-  margin: 0 auto;
-  font-size: var(--font-small);
- 
+.main-form__promo--input-c{
+    border: none;
+    border-bottom:2px solid #FF3333;  
 }
 
-.login_olvide-contraseña{
-  color: var(--secondary-solid);
+.main-form__images{
+    padding: var(--spacing-16);
+    font-size: small;
 }
 
-  /*Footer*/
+.main-form__buttons--button{
+    border:none;
+    font-size: var(--font-small);
+    color: var(--light-bg-solid);
+    background-color: var(--primary-solid);
+     ;
+}
+
+/*Footer*/
 .footer{
-  position: absolute;
-  width: 100%;
-  background-color: var(--dark-bg-solid);
-  padding: var(--spacing-36); 
-  bottom: 0;
-}
-
-  .footer__copy{
-    margin-top: var(--spacing-36);
-    text-align: center;
-  }
-
-@media (min-width: 768px) {
-    .embed-responsive-16by9 iframe {
-      width: 300px;
-      height: 300px;
-    }
-  }
-  @media (min-width: 960px) {
-    .embed-responsive-16by9 iframe {
-      width: 400px;
-      height: 300px;
-    }
+    position: absolute;
+    width: 100%;
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36); 
+    bottom: 0;
   }
   
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
+    .footer__copy{
+      margin-top: var(--spacing-36);
+      text-align: center;
     }
   
-    .embed-responsive-16by9 iframe {
-      width: 100%;
-      height: auto;
+  @media (min-width: 768px) {
+      .embed-responsive-16by9 iframe {
+        width: 300px;
+        height: 300px;
+      }
     }
-  }
-  
+    @media (min-width: 960px) {
+      .embed-responsive-16by9 iframe {
+        width: 400px;
+        height: 300px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .embed-responsive-16by9 iframe {
+        width: 100%;
+        height: auto;
+      }
+    }

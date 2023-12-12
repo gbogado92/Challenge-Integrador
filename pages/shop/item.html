@@ -19,7 +19,7 @@
                 </picture>
                 <ul class="navbar__menu">
                     <li class="navbar__item with-submenu">
-                        <a class="navbar__link with-icon" href="/pages/shop/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                        <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
                         <ul class="submenu">
                             <li class="submenu__item">
                                 <a href="" class="submenu__link">Funkos</a>
@@ -45,94 +45,112 @@
                 </ul>
             </nav>  
         </header>
-        <main class="main-container">
-            <section class="item container">
-                <article class="card-item">
-                    <a class="card-item_link" href="">
-                        <picture class="card-item__cover">
-                            <img class="card-item__img--front" src="/img/harry-potter/harry-1.webp" alt="Figura coleccionable Funko de Harry Potter">
-                            <img class="card-item__img--back" src="/img/harry-potter/harry-box.webp" alt="Figura coleccionable Funko Harry Potter en la caja">
-                        </picture>
-                        <div class="card-item_content">
-                            <p class="card-item_license">Harry Potter</p>
-                            <h4 class="card-item_name">
-                                HARRY POTTER
-                            </h4>
-                            <p class="card-item_price">$ 14.000,00</p>
-                            <p class="card-item_promo">3 Cuotas sin interes</p>
+        <main class="container"> 
+            <section class="item">
+                <picture class="card-item__cover">
+                    <img class="card-item__img--front" src="./../../img/star-wars/baby-yoda-1.webp"
+                        alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+                    <img class="card-item__img--back" src="./../../img/star-wars/baby-yoda-box.webp"
+                        alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian-Package">
+                </picture>
+                <article class="item__info">
+                    <p class="item__licence">STAR WARS</p>
+                    <h3 class="item__name">BABY YODA BLUEBALL</h3>
+                    <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+                        limitada.</p>
+                    <p class="item__price">$ 1799,99</p>
+                    <form class="item__cart">
+                        <div class="item__imput">
+                            <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
+                            <span class="item__button">
+                                <button id="add" class="item__button-group" type="button">+</button>
+                                <button id="subtract" class="item__button-group" type="button">-</iconify-icon></button>
+                            </span>
                         </div>
+                        <a href="./carrito.html">
+                        <button class="item__submit" type="submit">Agregar al carrito</button>
                     </a>
+                    </form>
+                    <p class="item__promo">
+                        <a class="item__promo--link" href="./shop.html">Ver métodos de pago</a>
+                        - 3 CUOTAS SIN INTERÉS
+                    </p>
                 </article>
             </section>
-            <section class="slider container glide">
+            <section class="slider glide">
                 <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
                 <div class="glide__track" data-glide-el="track">
                     <ul class="slider__items glide__slides">
-                        <li class="slider__item  glide__slide">
+                        <li class="slider__item glide__slide">
                             <article class="card-item">
                                 <a class="card-item__link" href="">
                                     <picture class="card-item__cover">
-                                        <span class="card-item__tag">Nuevo</span>
-                                        <img class="card-item__img--front" src="/img/harry-potter/harry-1.webp" alt="Figura coleccionable Funko de Harry Potter">
-                                        <img class="card-item__img--back" src="/img/harry-potter/harry-box.webp" alt="Figura coleccionable Funko Harry Potter en la caja">
+                                        <span class="card-item__tag">Nuevo
+                                        </span>
+                                        <img class="card-item__img--front" src="./../../img/star-wars/trooper-1.webp"
+                                            alt="Figura coleccionable Funko de un Stormtrooper de la serie Star Wars">
+                                        <img class="card-item__img--back" src="./../../img/star-wars/trooper-box.webp"
+                                            alt="">
                                     </picture>
                                     <div class="card-item__content">
-                                        <p class="card-item__license">Harry Potter</p>
-                                        <h4 class="card-item__name">
-                                            HARRY POTTER
-                                        </h4>
-                                        <p class="card-item__price">$ 14.000,00</p>
-                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                        <p class="card-item__licence">STAR WARS</p>
+                                        <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                                     </div>
                                 </a>
                             </article>
                         </li>
-                        <li class="product__item  glide__slide">
+                        <li class="slider__item glide__slide">
                             <article class="card-item">
                                 <a class="card-item__link" href="">
                                     <picture class="card-item__cover">
-                                        <span class="card-item__tag">Nuevo</span>
-                                        <img class="card-item__img--front" src="/img/harry-potter/hermione-1.webp" alt="Figura coleccionable Funko de Hermione Granger">
-                                        <img class="card-item__img--back" src="/img/harry-potter/hermione-box.webp" alt="Figura coleccionable Funko de Hermione Granger en la caja">
+                                        <span class="card-item__tag">Nuevo
+                                        </span>
+                                        <img class="card-item__img--front" src="./../../img/pokemon/pidgeotto-1.webp"
+                                            alt="Figura coleccionable Funko de un Pidgeotto de la serie Pokemón">
+                                        <img class="card-item__img--back" src="./../../img/pokemon/pidgeotto-box.webp"
+                                            alt="">
                                     </picture>
                                     <div class="card-item__content">
-                                        <p class="card-item__license">Harry Potter</p>
-                                        <h4 class="card-item__name">
-                                            HERMAIONI GRANGER
-                                        </h4>
-                                        <p class="card-item__price">$ 14.000,00</p>
-                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                        <p class="card-item__licence">POKEMON</p>
+                                        <h4 class="card-item__name">PIDGEOTTO</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                                     </div>
                                 </a>
                             </article>
                         </li>
-                        <li class="product__item glide__slide">
+                        <li class="slider__item glide__slide">
                             <article class="card-item">
                                 <a class="card-item__link" href="">
                                     <picture class="card-item__cover">
-                                        <span class="card-item__tag">Nuevo</span>
-                                        <img class="card-item__img--front" src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna">
-                                        <img class="card-item__img--back" src="/img/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Luna en la caja">
+                                        <span class="card-item__tag">Nuevo
+                                        </span>
+                                        <img class="card-item__img--front" src="./../../img/harry-potter/luna-1.webp"
+                                            alt="Figura coleccionable Funko de Luna de la película Harry Potter">
+                                        <img class="card-item__img--back" src="./../../img/harry-potter/luna-box.webp"
+                                            alt="">
                                     </picture>
                                     <div class="card-item__content">
-                                        <p class="card-item__license">Harry Potter</p>
-                                        <h4 class="card-item__name">
-                                            LUNA LOVEGOOD
-                                        </h4>
-                                        <p class="card-item__price">$ 14.000,00</p>
-                                        <p class="card-item__promo">3 Cuotas sin interes</p>
+                                        <p class="card-item__licence">HARRY POTTER</p>
+                                        <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                                     </div>
                                 </a>
                             </article>
                         </li>
                     </ul>
-                </div>  
+                </div>
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<<"><iconify-icon icon="ic:sharp-chevron-left"></iconify-icon></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">>"><iconify-icon icon="ic:sharp-chevron-right"></iconify-icon></button>
-                  </div>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon
+                            icon="tabler:chevron-left"></iconify-icon></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon
+                            icon="tabler:chevron-right"></iconify-icon></button>
+                </div>
             </section>
-        </main>
+        </main> 
         <footer class="footer" >
             <nav class="navbar container">
                 <ul class="navbar__item">
