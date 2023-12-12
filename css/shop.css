@@ -327,32 +327,24 @@ header {
     background-color: #FF3333;
   }
 
-
 .btn-1{
-    
     border: none;
     width: 44px;
     height:44px;
     color: white;
     background-color: #919EAB;
-  }
+  } 
 
-  .btn-2{
-    
-    width: 44px;
-    height:44px;
-    color: #FF3333;
-    border-color: #FF3333;
-  }
-
-  .btn-3, .btn-4, .btn-5, .btn-6, .btn-7 , .btn-8{
+  .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7 , .btn-8{
     border: none;
     width: 44px;
     height:44px;
-color: #212B36;
+    color: #212B36;
   }
 
+  btns:hover{
 
+  }
   
   /* Estilos para los botones */
   .btns button {

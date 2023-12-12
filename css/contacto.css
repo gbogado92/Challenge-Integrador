@@ -157,29 +157,44 @@ header {
 }
 
 /*Main*/
-.main{
-   
-   
-    
+ .main{
+    display: grid;
+    padding: var(--spacing-68) var(--spacing-12);
 }
 
-.item container{
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-24);
-  margin:var(--spacing-36) auto; 
+.contact--title{
+    font-size: var(--font-jumbo);
 }
 
-.item__title{
-  font-family: var(--alternative-font);
-  font-size: var(--font-display);
-  text-transform: uppercase;
+.contact-form{
+    font-size: var(--font-xsmall);
+    width: 400;
+    padding: var(--spacing-8) var(--spacing-32);
+}
+
+.contact-name{
+    padding: var(--spacing-16);
+    display: flex;
+}
+
+.contact-box{
+    border: none;
+    border-bottom:2px solid #FF3333;
+} 
+
+.contact-button{
+    background-color: var(--primary-solid);
+    border: none;
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-12);
+    color: var(--light-bg-solid);
 }
 
  /*Footer*/
  .footer{
   background-color: var(--dark-bg-solid);
   padding: var(--spacing-36);
+ 
 }
 
 .footer__copy{

@@ -159,6 +159,9 @@ header {
 }
 
 /*Main*/
+.main{
+    padding: var(--spacing-8);
+}
 .main-title{
     display: flex;
     font-family: var(--alternative-font);
@@ -173,28 +176,29 @@ header {
 
 .main-form__options{
     padding: var(--spacing-16);
-    font-size: small;
-    
+    font-size: var(--font-small);
+ 
 }
 
 .main-form__product-name-description__label{
     padding: var(--spacing-16);
-    font-size: small;
+    font-size: var(--font-small);
+    
 }
 
 .main-form__product-name-description__input{
+    
     border: none;
     border-bottom:2px solid #FF3333;
 }
 
 .main-textarea{
     padding: var(--spacing-16);
-    ;
 }
 
 .main-form__inputs{
     padding: var(--spacing-16);
-    font-size: small;  
+    font-size: var(--font-small);  
 }
 
 .main-form__inputs--input{
@@ -204,7 +208,7 @@ header {
 
 .main-form__promo{
     padding: var(--spacing-16);
-    font-size: small;
+    font-size: var(--font-small);
 }
 
 .main-form__promo--input-c{
@@ -214,7 +218,7 @@ header {
 
 .main-form__images{
     padding: var(--spacing-16);
-    font-size: small;
+    font-size: var(--font-small);
 }
 
 .main-form__buttons--button{
@@ -222,12 +226,12 @@ header {
     font-size: var(--font-small);
     color: var(--light-bg-solid);
     background-color: var(--primary-solid);
-     ;
+    padding: var(--spacing-8) var(--spacing-12);
+    
 }
 
 /*Footer*/
 .footer{
-    position: absolute;
     width: 100%;
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36); 
