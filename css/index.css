@@ -1,63 +1,91 @@
-.navbar-nav .nav-link:hover {
-  color: #A60A43;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+      /*Paleta de diseño*/
+  --primary-solid: #FF3333; 
+  --primary-900:rgba(255, 51, 51, 0.9);   
+  --primary-500:rgba(255, 51, 51, 0.5);   
+  --primary-300:rgba(255, 51, 51, 0.3); 
+  
+  --secondary-solid: #1D84B5;
+  --secondary-900:rgba(29,132,181,0.9);
+  --secondary-500:rgba(29,132,181,0.5);
+  --secondary-300:rgba(29,132,181,0.3);
+
+  --dark-solid: #1F1F1F;
+  --dark-900: rgb(31,31,31,0.9);
+  --dark-500: rgb(31,31,31,0.5);
+  --dark-300: rgb(31,31,31,0.3);
+
+  --dark-bg-solid: #30343F;
+  --light-bg-solid: #FaFaFa;
+  --light-font-solid: #FFFFFF;
+
+/*Tipos de letras*/
+
+  --base-font:'Inter', sans-serif;
+  --alternative-font: 'Releway', sans-serif;
+
+/*Tamaño de letra*/
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge:3em;
+  --font-large:2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall:1.4em;
+
+/*Espaciadores*/
+--spacing-128:12.8rem;
+--spacing-68:6.8rem;
+--spacing-36:3.6rem;
+--spacing-28:2.8rem;
+--spacing-24:2.4rem;
+--spacing-20:2.0rem;
+--spacing-16:1.6rem;
+--spacing-12:1.2rem;
+--spacing-8:0.8rem;
+
 }
 
-main {
-  margin-top: 125px; 
+*,
+*::before,
+*::after { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.accordion-button {
-  color: #A60A43 !important; 
-  font-weight: bold;
+html {
+  font-family: var(--base-font);
+  font-size:  62.5%;
+  color: var(--dark-solid);
+
 }
 
-  .accordion-button:not(.collapsed) {
-    background-color: #A60A43 !important; 
-    color: white !important; 
-  font-weight: normal;
-  }
-
-  .accordion-button:focus {
-    border: none !important; 
-    outline: none !important;
-    box-shadow: none !important;
-  }
-
-.custom-card {
-  width: 80%;
-  margin: 0 auto;
-}
-
-
-.list-inline a {
+a {
   text-decoration: none;
-  color: white;
+  font-size: 2em;
+  font-family: inherit;
+  color: inherit;
 }
 
-.list-inline a:hover {
-  color: #A60A43;
+header, 
+footer {
+  font-family: var(--alternative-font);
+  color: var(--light-font-solid);
+
 }
 
-@media (min-width: 768px) {
-  .embed-responsive-16by9 iframe {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (min-width: 960px) {
-  .embed-responsive-16by9 iframe {
-    width: 400px;
-    height: 300px;
-  }
+ul, ol {
+  list-style-type: none;
 }
 
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
+p {
+  font-size: 1.8em;
+}
 
-  .embed-responsive-16by9 iframe {
-    width: 100%;
-    height: auto;
-  }
+.container {
+min-width: 1200px;
+margin: 0 auto;
 }

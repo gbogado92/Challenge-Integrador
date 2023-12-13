@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </header>
   <body>
     <header>
-      <nav>
-        <picture>
+      <nav class="nabvar">
+        <picture class="nabvar__logo">
           <a href="./index.html">
             <img
               src="./img/logo_light_horizontal.svg"
@@ -16,19 +17,25 @@
             />
           </a>
         </picture>
-        <ul>
-          <li><a href="./pages/shop/shop.html">SHOP</a></li>
-          <li><a href="#">CONTACTO</a></li>
-          <li><a href="./pages/shop/login.html">LOGIN</a></li>
-          <li>
-            <a href="./pages/shop/carrito.html">
+        <ul class="nabvar__menu">
+          <li class="nabvar__item">
+            <a class="nabvar__link" href="./pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="nabvar__item">
+            <a class="nabvar__link" href="#">CONTACTO</a>
+          </li>
+          <li class="nabvar__item">
+            <a class="nabvar__link" href="./pages/shop/login.html">LOGIN</a>
+          </li>
+          <li class="nabvar__item">
+            <a class="nabvar__cart" href="./pages/shop/carrito.html">
               <img src="./img/icons/cart-icon.svg" alt="Ícono del carrito" />
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section>
         <article>
           <h2>Nuevos Ingresos</h2>
