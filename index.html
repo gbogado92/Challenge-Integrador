@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  <header>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </header>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
   <body>
     <header>
-      <nav class="nabvar">
-        <picture class="nabvar__logo">
+      <nav class="navbar container">
+        <picture class="navbar__logo">
           <a href="./index.html">
             <img
               src="./img/logo_light_horizontal.svg"
@@ -17,18 +17,31 @@
             />
           </a>
         </picture>
-        <ul class="nabvar__menu">
-          <li class="nabvar__item">
-            <a class="nabvar__link" href="./pages/shop/shop.html">SHOP</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item with__submenu">
+            <a class="navbar__link with-icon" href="./pages/shop/shop.html"
+              >SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llaveros</a>
+              </li>
+            </ul>
           </li>
-          <li class="nabvar__item">
-            <a class="nabvar__link" href="#">CONTACTO</a>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">CONTACTO</a>
           </li>
-          <li class="nabvar__item">
-            <a class="nabvar__link" href="./pages/shop/login.html">LOGIN</a>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/shop/login.html">LOGIN</a>
           </li>
-          <li class="nabvar__item">
-            <a class="nabvar__cart" href="./pages/shop/carrito.html">
+          <li class="navbar__item">
+            <a class="navbar__cart" href="./pages/shop/carrito.html">
               <img src="./img/icons/cart-icon.svg" alt="Ícono del carrito" />
             </a>
           </li>
@@ -163,5 +176,6 @@
       </section>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
