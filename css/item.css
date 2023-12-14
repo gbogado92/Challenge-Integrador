@@ -200,9 +200,10 @@ header {
 .item__cart {
     display: flex;
     gap: 42px;
+    
 }
 
-.item__imput {
+.item__input {
     display: flex;
 }
 
@@ -219,6 +220,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    
 }
 
 .item__button-group {
@@ -230,6 +232,7 @@ header {
     background-color: #4F4F4F;
     color: var(--light-font-solid);
     transition: background 0.7;
+    margin-left: var(--spacing-12);
 }
 
 .item__button-group:hover{
