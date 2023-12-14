@@ -87,7 +87,7 @@ img{
 }
 
 .container{
-    max-width:1400px;
+    max-width:1200px;
     margin: 0 auto;
     display: grid;
     gap: 1.6em;
@@ -161,6 +161,8 @@ header {
 .container >.main-container{
     grid-column: span 4;
 }
+
+
 /*Aside*/
 
 
