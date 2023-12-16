@@ -1,161 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-      <title>CARRITO</title>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./../../css/carrito.css" />     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../img/isotype.svg"
+      type="image/x-icon"
+    />
+    <title>Carrito de compras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../css/carrito.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
   </head>
+
   <body>
     <header>
-          <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="/index.html">
-                    <img src="/img/logo_light_horizontal.svg" alt="">
-                </a>  
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
-                </li class="navbar__item">
-                <li>
-                    <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
-                </li class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="/pages/carrito.html"></a>
-                        <img src="/img/icons/cart-icon.svg" alt="icono">
-                </li>
-            </ul>
-        </nav>  
-    </header>
-    <main class="main-container"> 
-      <section class="catalogue__grilla">
-            <h1 class="catalogue-title">CARRITO DE COMPRAS</h1>
-            <table class="catalogue-tabla">
-                <thead>
-                    <th><h3>DETALLE DE PRODUCTO</h3></th>
-                    <th><h3>CANTIDAD</h3></th>
-                    <th><h3>TOTAL</h3></th>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <h4>BABY YODA BLUEBALL</h4>
-                            <p>STAR WARS</p>
-                            <p>Precio: $ 1799,99</p>
-                        </td>
-                        <td>
-                            <input type="number" name="counter" id="counter">
-                        </td>
-                        <td>
-                            <p>$ 3599,98</p>
-                        </td>
-                        <td>
-                            <button>x</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>PIDGEOTTO</h4>
-                            <p>POKEMON</p>
-                            <p>Precio: $ 1799,99</p>
-                        </td>
-                        <td>
-                            <input type="number" name="counter" id="counter">
-                        </td>
-                        <td>
-                            <p>$ 1799,99</p>
-                        </td>
-                        <td>
-                            <button>x</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="catalogue-resumen">
-            <h3 class="resumen-title">RESUMEN</h3>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h4>CANTIDAD DE ELEMENTOS</h4>
-                        </td>
-                        <td>
-                            <p>3</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>SUBTOTAL</h4>
-                        </td>
-                        <td>
-                            <p>$ 5.399,97</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>ENVIO</h4>
-                        </td>
-                        <td>
-                            <p>$ 0,00</p>
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>
-                            <h3>TOTAL</h3>
-                        </td>
-                        <td>
-                            <p>$ 5.399,97</p>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-            <button type="submit">IR A PAGAR</button>
-        </section>
-    </main> 
-    <footer class="footer" >
       <nav class="navbar container">
-          <ul class="navbar__item">
-              <li class="navbar__item">
-                  <a class="navbar__link" href="./shop.html">SHOP</a>
+        <picture class="navbar__logo">
+          <a href="../../index.html">
+            <img
+              src="../../img/logo_light_horizontal.svg"
+              alt="Isologotipo de la marca Funkoshop"
+            />
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item with__submenu">
+            <a class="navbar__link with-icon" href="./pages/shop/shop.html"
+              >SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
               </li>
-              <li class="navbar__item">
-                  <a class="navbar__link" href="/pages/Admin/crearUsuario.html">REGISTRARSE</a>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
               </li>
-              <li>
-                  <a class="navbar__link" href="/pages/Admin/login.html">LOGIN</a>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llaveros</a>
               </li>
-              <li>
-                  <a class="navbar__link" href="/pages/contacto.html">CONTACTO</a>
-              </li>       
-          </ul>
-          <picture>
-              <img src="/img/isotype.svg" alt="Isotipo de la marca">
-          </picture>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/Admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__cart" href="./pages/shop/carrito.html">
+              <img
+                src="../../img/icons/cart-icon.svg"
+                alt="Ícono del carrito"
+              />
+            </a>
+          </li>
+        </ul>
       </nav>
-      
-      <p class="footer__copy">All rights reserved 2023 - Funkoshop</p>
-  </footer>
-</body>
+    </header>
 
+    <main class="main-carrito container">
+      <h1 class="cart-title">CARRITO DE COMPRAS</h1>
+
+      <div class="cart-table">
+        <article class="custom-table-header">
+          <h3 class="custom-table-heading__detalle">DETALLE DE PRODUCTO</h3>
+          <h3 class="custom-table-heading__cantidad">CANTIDAD</h3>
+          <h3 class="custom-table-heading__total">TOTAL</h3>
+        </article>
+
+        <article class="cart-table__item">
+          <div class="funko">
+            <img
+              class="funko__img"
+              src="../../img/star-wars/baby-yoda-1.webp"
+              alt="Baby Yoda Blueball - Producto de Star Wars"
+            />
+            <div class="funko__text">
+              <h2 class="funko__text-title">BABY YODA BLUEBALL</h2>
+              <p class="funko__text-licence">STARS WARS</p>
+              <p class="funko__text-price">Precio: $1799,99</p>
+            </div>
+          </div>
+          <div class="item__cart">
+            <input
+              class="item__input"
+              type="text"
+              name="quantity"
+              id="quantity1"
+              placeholder="0"
+            />
+            <div class="btnmasmenos">
+              <button type="button" id="subtract" class="mp width-icon">
+                <iconify-icon
+                  icon="ic:baseline-minus"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <button type="button" id="add" class="mp width-icon">
+                <iconify-icon
+                  icon="ic:outline-plus"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-table__price">
+            <p class="cart-table__total-price">$3599,98</p>
+          </div>
+          <button class="button-x">
+            <iconify-icon id="button-x1" icon="tabler:xbox-x"></iconify-icon>
+          </button>
+        </article>
+
+        <div class="cart-table__item">
+          <div class="funko">
+            <img
+              class="funko__img"
+              src="../../img/pokemon/pidgeotto-1.webp"
+              alt="Pidgeotto - Producto de Pokemon"
+            />
+            <div class="funko__text">
+              <h2 class="funko__text-title">PIDGEOTTO</h2>
+              <p class="funko__text-licence">POKEMON</p>
+              <p class="funko__text-price">Precio unitario: $1799,99</p>
+            </div>
+          </div>
+          <div class="item__cart">
+            <input
+              class="item__input"
+              type="text"
+              name="quantity"
+              id="quantity2"
+              placeholder="0"
+            />
+            <div class="btnmasmenos">
+              <button type="button" id="subtract" class="mp width-icon">
+                <iconify-icon
+                  icon="ic:baseline-minus"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <button type="button" id="add" class="mp width-icon">
+                <iconify-icon
+                  icon="ic:outline-plus"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-table__price">
+            <p class="cart-table__total-price">$1799,99</p>
+          </div>
+
+          <button class="button-x">
+            <iconify-icon id="button-x2" icon="tabler:xbox-x"></iconify-icon>
+          </button>
+        </div>
+      </div>
+
+      <section class="resumen">
+        <article class="resumen__content">
+          <div class="resumen__text">
+            <h2 class="cart-title-resumen">RESUMEN</h2>
+          </div>
+          <div class="resumen__card">
+            <div class="resumen__card-group">
+              <div class="resumen__card-description">
+                <span>CANTIDAD DE ELEMENTOS</span>
+                <span>SUBTOTAL</span>
+                <span>ENVÍO</span>
+              </div>
+              <div class="resumen__card-price">
+                <span id="totalElements">0</span>
+                <span id="subTotalPrice">0</span>
+                <span>$0,00</span>
+              </div>
+            </div>
+            <div class="resumen__card-group resumen__card-group--total">
+              <span class="resumen__card-group--total-text">TOTAL</span>
+              <span class="total-price" id="totalPrice">0</span>
+            </div>
+          </div>
+
+          <a class="resumen-item__button" href="#">IR A PAGAR</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/Admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img src="../../img/isotype.svg" alt="Isotype de la marca Funkoshop"
+        /></picture>
+      </nav>
+
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    <script src="../../javascript/cart.js"></script>
+    <script src="../../javascript/menuhamb.js"></script>
+  </body>
 </html>
