@@ -1,0 +1,36 @@
+<%- include('partials/headerS') -%>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTACTO</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="./../css/contacto.css" /> 
+    </head>
+
+    <body>
+    
+        <main class="main container">
+            <h1 class="contact--title">Contacto</h1>
+            <form class="contact-form" action="">
+                <label class="contact-name" for="">
+                    <p>Nombre</p>
+                    <input class="contact-box" type="text">
+                    <p>E-mail</p>
+                    <input class="contact-box" type="email">
+                </label>
+                <label lass="contact-name" class="contact-textarea" for="">
+                    <p>Ingrese a continuación su mensaje</p>
+                    <textarea name="" id="" cols="100" rows="20"></textarea>
+                </label>
+                <br>
+                <label  for="">
+                    <input class="contact-button" type="button" value="Enviar">
+                </label>
+            </form>
+        </main>
+        <%- include('partials/footerS') -%>
+    </body>
+
+</html>

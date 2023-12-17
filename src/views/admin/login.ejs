@@ -1,0 +1,40 @@
+<%- include('./../partials/headerA') -%>
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../../css/login.css" />
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm@glidejs/glide/dist/css/glide.theme.min.css">
+       
+    </head>
+<body>
+   
+    <main class="main-container">
+        <h1 class="login_title">INGRESAR A MI CUENTA</h1>
+        <form action="" class="form_login">
+                <div class="login_email">
+                    <label class="login_label-email" for="email">Email</label>
+                    <input class="login_input-email" type="email" id="email">
+                </div>
+                <div class="login_password">
+                    <label class="login_label-password"for="contraseña">Contraseña</label>
+                    <input class="login_input-password" type="password" id="contraseña">
+                </div>
+                <div class="login_ingresar">
+                    <button type="submit" class="login_ingresar-button">Ingresar</button>
+                    <input type="checkbox" id="recordarme">
+                    <label for="recordarme">Recordarme</label>
+                </div>
+                <a class="login_olvide-contraseña" href="#">Olvidé mi contraseña</a>
+        </form>  
+    </main>
+    
+            
+    </section>
+    <%- include('./../partials/footerA') -%> 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="#"></script>
+</body>
+</html>

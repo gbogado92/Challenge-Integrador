@@ -1,0 +1,84 @@
+<%- include('./../partials/headerA') -%>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CREATE ITEM</title>
+        <link rel="stylesheet" href="./../../css/createProduct.css">
+    </head>
+
+    <body>
+        <main class="main container">
+            <h1 class="main-title">CREAR NUEVO ITEM</h1>
+            
+            <form class="main-form" action="/admin/edit/20" method="post" enctype="application/x-www-form-urlencoded">
+
+                <section class="main-form__options">
+                    <label class="main-form__options--label" for="categoria">Categoría:</label>
+                    
+                    <select class="main-form__options--select" name="categoria" id="categoria">
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="" >categoria 1</option>
+                        <option value="" >categoria 2</option>
+                        
+                    </select>
+
+                    <label class="main-form__options--label" for="licencia">Licencia:</label>
+                    
+                    <select class="main-form__options--select" name="licencia" id="licencia">
+                        
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="" >licencia 1</option>
+                        <option value="" >licencia 2</option>
+                    </select>
+                </section>
+                <section class="main-form__product-name-description">
+                    <section class="main-form__product-name-description--name">
+                        <label class="main-form__product-name-description__label" for="nombre-producto">Nombre del producto:</label>
+                        <input class="main-form__product-name-description__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+
+                    </section>
+                    <div class="main-textarea">
+                        <textarea class="main-form__product-name-description--textarea" name="descripcion-producto" id="descripcion-producto" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
+                    </div>
+                </section>
+                <section class="main-form__inputs">
+                    <label class="main-form__inputs--label" for="sku">SKU:</label>
+                    <input class="main-form__inputs--input" type="text" name="sku" id="sku" placeholder="SSK111AB001">
+                    <label class="main-form__inputs--label" for="precio">Precio:</label>
+                    <input class="main-form__inputs--input" type="text" name="precio" id="precio" placeholder="$ 0.000,00">
+                    <label class="main-form__inputs--label" for="stock">Stock:</label>
+                    <input class="main-form__inputs--input" type="text" name="stock" id="stock" placeholder="0">
+                </section>
+                <section class="main-form__promo">
+                    <label class="main-form__promo--label" for="descuento">Descuento:</label>
+                    <input class="main-form__promo--input-c" type="text" name="descuento" id="descuento" placeholder="0%">
+                    <label class="main-form__promo--label" for="cuotas">Cuotas:</label >
+                    <select class="main-form__promo--select" name="cuotas" id="cuotas">
+                        
+                        <option value="" disabled selected>3 Cuotas sin interés</option>
+                        <option value="" selected>3 Cuotas sin interés</option>
+                        <option value="">6 Cuotas sin interés</option>
+                        <option value="">9 Cuotas sin interés</option>
+                        <option value="">0</option>
+                    </select>
+
+                </section>
+                <section class="main-form__images">
+                    <label class="main-form__images--label" for="imagenes">Imágenes:</label>
+                    <input class="main-form__images--input" type="file" name="imagen" accept="image/png, image/gif, image/jpeg, image/webp" id="">
+                </section>
+
+                <section class="main-form__buttons">
+                    <input class="main-form__buttons--button" type="submit" value="Agregar Producto">
+                    <input class="main-form__buttons--button" type="reset" value="Limpiar">
+                </section>
+            </form>
+        </main>
+
+        <%- include('./../partials/footerA') -%>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    </body>
+
+</html>

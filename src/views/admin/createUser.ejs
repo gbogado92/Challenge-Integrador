@@ -1,0 +1,36 @@
+<%- include('./../partials/headerA') -%>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CreateUser</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="./../../css/usuario.css" /> 
+    </head>
+    <body>
+        
+        <main class="main container">
+            <h1 class="register_title">CREA TU CUENTA</h1>
+            <h2 class="register_subheader">Completa el formulario para sere parte del mundo de los Funkos</h2>
+            <form class="register_form"action="#">
+                <label class="register_label-contraseña"for="nombre">Nombre:</label>
+                <input class="register_input-red_line"type="text" id="nombre" placeholder="John">
+                <label class="register_label-contraseña"for="apellido">Apellido:</label>
+                <input class="register_input-red_line"type="text" id="apellido" placeholder="Doe">
+                <label class="register_label-contraseña"for="email">Email:</label>
+                <input class="register_input-red_line"type="email" id="email" placeholder="johndoe@correo.com">
+                <label class="register_label-contraseña"for="contraseña">Contraseña:</label>
+                <input class="register_input-red_line"type="password" id="contraseña" placeholder=".........">
+                <label class="register_label-contraseña"for="contraseña">Repita Contraseña:</label>
+                <input class="register_input-red_line"type="password" id="contraseña" placeholder=".........">
+                <div class="register_submit-section">
+                    <button type="submit" class="login_ingresar-button">Ingresar</button>
+                    <input type="checkbox" id="recordarme">
+                    <label for="recordarme">Acepto</label>
+                    <a class="login_olvide-contraseña" href="#">Terminos y condiciones</a>
+                </div>
+            </form>
+        </main>
+        <%- include('./../partials/footerA') -%>  
+    </body>
+</html>
