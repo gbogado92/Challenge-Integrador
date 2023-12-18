@@ -10,7 +10,7 @@ const config = multer.diskStorage({
 
 const receptor = multer({config})
 
-router.get('/', mainController.inicio )
+router.get('/', mainController.inicio)
 
 router.get('/home', mainController.home)
 

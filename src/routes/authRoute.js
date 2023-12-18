@@ -11,10 +11,10 @@ const config = multer.diskStorage({
 
 const receptor = multer({config})
 
-router.get('/auth/login', query('email').notEmpty,authController.login)
+router.get('/auth/login', authController.login)
 router.post('/auth/login', authController.postLogin)
-router.get('/auth/register', authController.edit)
-router.post('/auth/register', authController.postEdit)
+router.get('/auth/register', authController.register)
+router.post('/auth/register', authController.postRegister)
 router.get('/auth/logout', authController.logout)
 
 module.exports = router

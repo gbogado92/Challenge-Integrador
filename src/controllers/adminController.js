@@ -1,9 +1,8 @@
-//const fs = require('fs')// Por si necesito un leer un FileSystem
+const fs = require('fs')// Por si necesito un leer un FileSystem
+const data = JSON.parse(fs.readFileSync("./src/fileJson/data.json", "utf8"));
 module.exports ={
 
-    admin: (req, res) => {
-        res.render('./../views/admin/admin')
-        },
+    admin: (req, res) => {res.render('admin/admin', {title: "Admin | Funkoshop", data:data})},
 
     create: (req, res) => {
         res.render('./../views/admin/createProduct')
@@ -16,7 +15,14 @@ module.exports ={
                  },
 
     edit: (req, res) => {
-        res.render('./../views/admin/edit')
+    
+        const idParam = parseInt(req.params.id);
+        const item = data.find(item => item.product_id === idParam);
+    
+        res.render('admin/edit', {view: {title: "Item | Funkoshop"},
+                    item: item,
+            });
+    
         },
 
     putId: (req, res) => {

@@ -157,8 +157,11 @@ header {
 }
 
 /*Main*/
-.main-container{    
-    display: flex;   
+.main {    
+    margin: var(--spacing-36) auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);  
 }
 
 .salir {
@@ -169,14 +172,19 @@ header {
 
 .container_search {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: var(--spacing-36);
+    gap: var(--spacing-20);
+   justify-content: start;
+   align-items: center;
+   padding: var(--spacing-8) var(--spacing-8);
+  font-size: var(--font-medium);
+  font-weight: 500;
+  color: var(--dark-300);
+  flex: 0 0 35%;
     
 }
 
 .icon_search {
-    width: 3rem;
+    font-size: var(--font-jumbo);
 }
 
 .admin_title {
@@ -220,56 +228,44 @@ header {
     border: none;
     border-radius: var(--spacing-8);
    
-}
+} 
 
 /* TABLA CON GRID */
 
 
-.admin_table {
+.admin__table {
+  
+    margin-left: var(--spacing-24);
+    max-width: 1126px;
+  }
+  
+  .admin__table-header {
+    margin-bottom: var(--spacing-24);
+    font-weight: 700;
+  }
+  
+  .admin__table-header,
+  .admin__table-row {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    gap: var(--spacing-12);
-    justify-items: start;
+    grid-template-columns: 40px 1fr 3fr 3fr 40px 40px;
+    justify-items: center;
     align-items: center;
-    font-size: var(--font-small);
-    width: 700;
-    margin: var(--spacing-8) 0;
-}
-
-.admin_table-id {
-    grid-column: 1;
-}
-
-.admin_table-codigo {
-    grid-column: 2/4; 
-    width: 4    00;
-}
-
-.admin_table-nombre {
-    grid-column: 4/8;   
-}
-
-
-.admin_table-categoria {
-    grid-column: 8/10;
-}
-
-
-.admin_table-lapiz {
-    grid-column: 11;
-    color: var(--secondary-solid);
-    justify-self: end;  
-    align-self: flex-start;   
-   
-}
-
-.admin_table-basurero {
-    grid-column: 12;
-    color: var(--primary-solid);
-    justify-self: end;            
-}
-
+    gap: var(--spacing-16);
+    font-size: var(--font-medium);
+    
+  }
+  
+  .admin__table-row {
+    padding: var(--spacing-16) 0;
+    font-weight: 500;
+  }
+  
+  .admin__table-row iconify-icon {
+    font-size: var(--font-medium); 
+  
+  }
+    
+ 
 /*Footer*/
 .footer{
     background-color: var(--dark-bg-solid);

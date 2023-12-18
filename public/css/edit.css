@@ -162,73 +162,109 @@ header {
 .main{
     padding: var(--spacing-8);
 }
-.main-title{
-    display: flex;
+
+.edit__title {
     font-family: var(--alternative-font);
-    font-size: var(--font-jumbo);
     font-weight: 700;
-    margin-bottom: var(--spacing-24);
+    font-size: var(--font-jumbo);
+    padding-top: var(--spacing-36);
 }
 
-.main-form{
-    
+.edit__form {
+    font-family: var(--base-font);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    padding-top: var(--spacing-36);
+    padding-bottom: var(--spacing-36);
+}
+  
+  .edit__form-fila {
+    display: flex;
+    gap: var(--spacing-16);
+    align-items: center;
 }
 
-.main-form__options{
-    padding: var(--spacing-16);
-    font-size: var(--font-small);
- 
+.edit__form-label {
+    font-size: var(--font-large);
 }
 
-.main-form__product-name-description__label{
-    padding: var(--spacing-16);
-    font-size: var(--font-small);
-    
+.edit__form-select {
+    font-size: var(--font-medium);
+    font-weight: 500;
+    padding: var(--spacing-4);
+    margin-right: var(--spacing-20);
+    width: max-content;
 }
 
-.main-form__product-name-description__input{
-    
-    border: none;
-    border-bottom:2px solid #FF3333;
+.edit__form-input {
+    font-size: var(--font-medium);
+    font-weight: 400;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+    margin-right: var(--spacing-20);
 }
 
-.main-textarea{
-    padding: var(--spacing-16);
+#sku, #precio {
+    width: 12%;
 }
 
-.main-form__inputs{
-    padding: var(--spacing-16);
-    font-size: var(--font-small);  
+#stock, #descuento {
+    text-align: center;
+    width: 5.5%;
 }
 
-.main-form__inputs--input{
-    border: none;
-    border-bottom:2px solid #FF3333;
+.edit__form-textarea {
+    font-size: var(--font-large);
+    font-weight: 400;
+    width: 80%;
+    height: 150px;
+    padding: var(--spacing-4);
 }
 
-.main-form__promo{
-    padding: var(--spacing-16);
-    font-size: var(--font-small);
+.edit__form-carga {
+    font-size: var(--font-medium);
+    font-weight: 400;
 }
 
-.main-form__promo--input-c{
-    border: none;
-    border-bottom:2px solid #FF3333;  
+.edit__form-imagenes {
+    display: flex;
+    gap: var(--spacing-36);
+    align-items: center;
 }
 
-.main-form__images{
-    padding: var(--spacing-16);
-    font-size: var(--font-small);
+.edit__form-imagen {
+    width: 12.5%;
+    height: auto;
 }
 
-.main-form__buttons--button{
-    border:none;
-    font-size: var(--font-small);
-    color: var(--light-bg-solid);
+.edit__form-imagen img {
+    border-bottom: 1px solid var(--primary-solid);
+}
+
+.edit__form-caption {
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    font-size: var(--font-medium);
+    text-align: center;
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: #B9B9B9;
+}
+  
+  .edit__form-submit {
+    width: 175px;
+    height: 44px;
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+    color: var(--light-font-solid);
     background-color: var(--primary-solid);
-    padding: var(--spacing-8) var(--spacing-12);
-    
+    border: 0;
 }
+   
 
 /*Footer*/
 .footer{
@@ -236,7 +272,7 @@ header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36); 
     bottom: 0;
-    position: absolute;
+    
   }
   
     .footer__copy{

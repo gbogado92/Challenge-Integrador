@@ -7,7 +7,101 @@
         <link rel="stylesheet" href="./../../css/edit.css">
     </head>
     <body>
-
+        <main class="container edit">
+            <h1 class="edit__title">EDITAR ITEM</h1>  
+            <form class="edit__form" action="" method="POST" enctype="multipart/form-data">
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="categoria">Categoría:</label>
+                    <select class="edit__form-select" id="categoria" name="category_id">
+                        <% categories.map(category =>{%>
+                                <option 
+                                value="<%= category.category_id%>"
+                                <% if(category.category_id == data.category_id) { %> selected <% } %>
+                                ><%= category.category_name%></option>
+                            <%})%>
+                    </select>
+    
+                    <label class="edit__form-label" for="licencia">Licencia:</label>
+                    <select class="edit__form-select" id="licencia" name="licence_id">
+                        <%licences.map(licence =>{%>
+                            <option value="<%= licence.licence_id%>"
+                            <% if(licence.licence_id == data.licence_id) { %> selected <% } %>
+                            ><%= licence.licence_name%></option>
+                        <%})%>
+                    </select>
+    
+                </div>
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="nombre">Nombre del producto:</label>
+                    <input class="edit__form-input" type="text" id="nombre" name="product_name"
+                        placeholder="Kakashi Hatake Shippuden Saga" value="<%= funko.product_name %>">
+    
+                </div>
+                <div>
+    
+                    <textarea class="edit__form-textarea" id="descripcion" name="product_description"
+                        placeholder="Descripción del producto"><%= data.product_description %></textarea>
+    
+                </div>
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="sku">SKU:</label>
+                    <input class="edit__form-input" type="text" id="sku" name="sku" placeholder="SSK111AB001" value="<%= funko.sku %>">
+    
+    
+                    <label class="edit__form-label" for="precio">Precio:</label>
+                    <input class="edit__form-input" type="text" id="precio" name="price" placeholder="$ 0.000,00" value="<%= funko.price %>">
+                    
+                    <label class="edit__form-label" for="stock">Stock:</label>
+                    <input class="edit__form-input" type="text" id="stock" name="stock" placeholder="0" value="<%= funko.stock %>">
+    
+                </div>
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="descuento">Descuento:</label>
+                    <input class="edit__form-input" type="text" id="descuento" name="discount" placeholder="0%" value="<%= funko.discount %>">
+    
+                    <label class="edit__form-label" for="cuotas">Cuotas:</label>
+                    <select class="edit__form-select" id="cuotas" name="dues">
+                        <option selected><%= funko.dues %></option>
+                        <option value="6">6 cuotas sin interés</option>
+                        <option value="8">8 Cuotas sin interés</option>
+                        <option value="10">10 Cuotas sin interés</option>
+                    </select>
+    
+                </div>
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="imagenes">Imagen Front:</label>
+                    <input class="edit__form-carga" type="file" id="imagenes" name="image_front" multiple>
+    
+                </div>
+                <div class="edit__form-fila">
+    
+                    <label class="edit__form-label" for="imagenes">Imagen Back:</label>
+                    <input class="edit__form-carga" type="file" id="imagenes" name="image_back" multiple>
+    
+                </div>
+                <div class="edit__form-imagenes">
+    
+                    <picture class="edit__form-imagen">
+                        <img src="/img<%= funko.image_front %>" alt="Imagen del frente del producto">
+                        <p class="edit__form-caption">Frente</p>
+                    </picture>
+    
+                    <picture class="edit__form-imagen">
+                        <img src="/img<%= funko.image_back %>" alt="Imagen del dorso del producto">
+                        <p class="edit__form-caption">Dorso</p>
+                    </picture>
+    
+                </div>
+    
+                <input class="edit__form-submit" type="submit" value="Modificar Producto">
+                
+            </form>
+        </main>
         <%- include('./../partials/footerA') -%>
     </body>
 

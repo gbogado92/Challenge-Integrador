@@ -11,9 +11,9 @@ const config = multer.diskStorage({
 const receptor = multer({config})
 
 router.get('/shop', shopController.shop)
-router.get('/shop/item:id', shopController.id)
+router.get('/shop/item', shopController.id)
 router.post('/shop/item/:id/add', shopController.postAdd)
 router.get('/shop/cart', shopController.cart)
-router.post('/shop/cart', shopController.postCart)
+router.post('/shop/cart', shopController.postCart) //cart checkout
 
 module.exports = router

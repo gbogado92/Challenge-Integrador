@@ -14,7 +14,7 @@ const receptor = multer({config})
 router.get('/admin', adminController.admin)
 router.get('/admin/create', adminController.create)
 router.post('/admin/create', adminController.postCreate)
-router.get('/admin/edi:id', adminController.edit)
+router.get('/admin/edit', adminController.edit)
 router.put('/admin/edit:id', adminController.putId)
 router.delete('/admin/delete/:id', adminController.deleteId)
 
