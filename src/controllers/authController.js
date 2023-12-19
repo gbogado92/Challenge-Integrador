@@ -16,18 +16,18 @@ module.exports ={
         try {
             const {email, password} = req.body;
             const user = await getUserByEmailFromDB(email);
-            const passwordAdmin = process.env.PASSWORD_ADMIN;
+            // const passwordAdmin = process.env.PASSWORD_ADMIN;
 
-            if(user && Object.keys(user).length > 1 && user.password == password && user.password == passwordAdmin){
+            // if(user && Object.keys(user).length > 1 && user.password == password && user.password == passwordAdmin){
 
-                req.session.esAdmin = true;
-                res.redirect('/admin');
-            }else if(user && Object.keys(user).length > 1 && user.password == password){
-                req.session.esAdmin = false;
-                res.redirect('/');
-            }else{
-                res.redirect('/auth/login');
-            }
+            //     req.session.esAdmin = true;
+            //     res.redirect('/admin');
+            // }else if(user && Object.keys(user).length > 1 && user.password == password){
+            //     req.session.esAdmin = false;
+            //     res.redirect('/');
+            // }else{
+            //     res.redirect('/auth/login');
+            // }
         } catch (error) {
             console.log(error);
         }

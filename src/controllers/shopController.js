@@ -3,20 +3,28 @@ const { getAllFunkosFromDB, getFunkoFromDB, getFunkosBy } = require("../models/m
 
 module.exports ={
 
-    shop: async (req, res) => {
-        try {
-            let response;
-            if (Object.keys(req.query).length === 0) { response = await getAllFunkosFromDB(); }
-            else { response = await getFunkosBy(req.query); }
+    // shop: async (req, res) => {
+    //     try {
+    //         let response;
+    //         if (Object.keys(req.query).length === 0) { response = await getAllFunkosFromDB(); }
+    //         else { response = await getFunkosBy(req.query); }
             
-            res.render("./shop/shop.ejs", {
-                title: "Shop | Funkoshop",
-                listaFunkos: response,
-            });
-        } catch (error) {
+    //         res.render("./shop/shop.ejs", {
+    //             title: "Shop | Funkoshop",
+    //             listaFunkos: response,
+    //         });
+    //     } catch (error) {
             
-        }
+    //      }
+    // },
+    shop: (req, res) => {
+        res.render('shop/shop',
+            {
+                title: 'Shop| Funkoshop',
+                content: 'Ruta para la vista de contacto'
+            })
     },
+
     id: async (req, res) => {
         try {
             const product_id = req.params.id;

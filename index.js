@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 // const color = require ('colors')
 const dotenv = require('dotenv')
-const session = require('express-session')
+// const session = require('express-session')
 const override = require('method-override')
 
 dotenv.config()
@@ -22,19 +22,19 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded())
 app.use(express.json())
 app.use(override('_method')) //sobreescribir metodos
-app.use(session({
-        secret:process.env.SECRET_KEY,
-        name: 'cookie session',
-        resave: false,
-        saveUninitialized: false,
-        cookie:{maxAge:12340000}
-    })) // cookie para reconocimiento de usuario
+// app.use(session({
+//         secret:process.env.SECRET_KEY,
+//         name: 'cookie session',
+//         resave: false,
+//         saveUninitialized: false,
+//         cookie:{maxAge:12340000}
+//     })) // cookie para reconocimiento de usuario
     
 
 app.use('/', mainRoute)
-app.use('/shop', shopRoute)
-app.use('/admin', adminRoute)
-app.use('/auth', authRoute)
+app.use('/', shopRoute)
+app.use('/', adminRoute)
+app.use('', authRoute)
 
 app.use((req, res, next) => {
         res.status(404).render(`404`)

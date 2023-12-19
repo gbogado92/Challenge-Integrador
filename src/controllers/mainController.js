@@ -21,7 +21,7 @@ module.exports ={
     },
 
     contact: (req, res) => {
-        res.render('contact.ejs',
+        res.render('contacto',
             {
                 title: 'Contacto | Funkoshop',
                 content: 'Ruta para la vista de contacto'
