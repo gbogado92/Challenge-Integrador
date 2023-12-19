@@ -4,7 +4,7 @@ const validator = require('../mw/validator.js')
 const authController = require('./../controllers/authController.js')
 const router = express.Router()
 
-router.use(bodyParser.jason())
+router.use(bodyParser.json())
 
 router.get('/auth/login', authController.login)
 router.post('/auth/login', authController.postLogin)

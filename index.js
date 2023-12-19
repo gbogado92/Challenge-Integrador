@@ -1,12 +1,19 @@
 const express = require('express')
 const path = require('path')
+// const color = require ('colors')
+const dotenv = require('dotenv')
+const session = require('express-session')
+const override = require('method-override')
+
+dotenv.config()
+
+
+const app = express() //ejecuto el modulo
+
 const mainRoute = require('./src/routes/mainRoute.js')
 const shopRoute = require('./src/routes/shopRoute.js')
 const adminRoute= require('./src/routes/adminRoute')
 const authRoute = require('./src/routes/authRoute.js')
-const override = require('method-override')
-
-const app = express() //ejecuto el modulo
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/src/views'))
@@ -21,7 +28,7 @@ app.use(session({
         resave: false,
         saveUninitialized: false,
         cookie:{maxAge:12340000}
-    }));
+    })) // cookie para reconocimiento de usuario
     
 
 app.use('/', mainRoute)

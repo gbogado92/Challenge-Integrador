@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.get('/', mainController.inicio)
 router.get('/home', mainController.home)
-router.get('/contact', mainController.contact )
+router.get('/contact', mainController.contact)
 router.get('/about', mainController.about)
 router.get('/faqs', mainController.faqs)
 
