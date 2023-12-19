@@ -12,6 +12,11 @@
 <body>
    
     <main class="main-container">
+        <div class="account__msg">
+            <% if (msg != undefined) { %>
+             <p class="msg">  <%= msg %> </p>
+             <% } %>
+        </div>
         <h1 class="login_title">INGRESAR A MI CUENTA</h1>
         <form action="" class="form_login">
                 <div class="login_email">

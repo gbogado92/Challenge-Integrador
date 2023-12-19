@@ -15,11 +15,19 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded())
 app.use(express.json())
 app.use(override('_method')) //sobreescribir metodos
+app.use(session({
+        secret:process.env.SECRET_KEY,
+        name: 'cookie session',
+        resave: false,
+        saveUninitialized: false,
+        cookie:{maxAge:12340000}
+    }));
+    
 
 app.use('/', mainRoute)
-app.use('/', shopRoute)
-app.use('/', adminRoute)
-app.use('/', authRoute)
+app.use('/shop', shopRoute)
+app.use('/admin', adminRoute)
+app.use('/auth', authRoute)
 
 app.use((req, res, next) => {
         res.status(404).render(`404`)
@@ -28,8 +36,8 @@ app.use((req, res, next) => {
 const port = process.env.PORT || 3000
 
 
-
-
-app.listen(port, () => console.log('El server ésta funcionando en localhost:${port}'))
+app.listen(port, () => {
+        console.log(`El server ésta funcionando en localhost:${port}`)
+})
 
 

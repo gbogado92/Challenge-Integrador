@@ -1,4 +1,5 @@
-//const fs = require('fs')// Por si necesito un leer un FileSystem
+const { getAllFunkosFromDB } = require('../models/model.js')
+
 module.exports ={
 
     inicio: (req, res) => {
@@ -6,13 +7,26 @@ module.exports ={
                 <a href="/home"> Vamos a la página principal</a>`)
         },
 
-    home: (req, res) => {
-        res.render('index')
-        },
+    home: async (req, res) => {
+        try {
+            const funkos = await getAllFunkosFromDB();
+            res.render('index.ejs',
+                {
+                    title: 'Home | Funkoshop',
+                    funkos
+                })
+        } catch (error) {
+
+        }
+    },
 
     contact: (req, res) => {
-        res.render('contacto')
-        },
+        res.render('contact.ejs',
+            {
+                title: 'Contacto | Funkoshop',
+                content: 'Ruta para la vista de contacto'
+            })
+    },
 
     about: (req, res) => {
         res.render('index')
@@ -23,13 +37,4 @@ module.exports ={
         },
 
 
-    // postHome: function(req, res){
-    //     console.log(req.body) //repuestas del formulario
-    //     res.send(`<h1> Se procesó el formulario con el dato ${req.body.nombre} </h1>
-    //             <a href="/home"> Ir a la pagina principal</a>`)
-    //      },
-
-    // putHome:(req, res) => {
-    //     res.send('<h1>usamos method override</h1>')
-    // },
 }

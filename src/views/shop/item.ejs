@@ -17,13 +17,13 @@
                         <img class="card-item__img--front" src="./../../img/star-wars/baby-yoda-1.webp"
                             alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
                         <img class="card-item__img--back" src="./../../img/star-wars/baby-yoda-box.webp"
-                            alt="Figura coleccionable Funko de <%= item.product_name%>">
+                            alt="Figura coleccionable Funko de <%= funko.product_name %>">
                     </picture>
                     <article class="item__info">
-                        <p class="item__licence"><%= data.licence_name%></p>
-                        <h3 class="item__name"><%= data.product_name%></h3>
-                        <p class="item__description">Figura coleccionable de <%= item.product_description%></p>
-                        <p class="item__price"><%= data.product_price%></p>
+                        <p class="item__licence"><%= funko.licence_name %></p>
+                        <h3 class="item__name"><%= funko.product_name %></h3>
+                        <p class="item__description">Figura coleccionable de <%= funko.product_description%></p>
+                        <p class="item__price"><%= funko.product_price %></p>
                         <form class="item__cart">
                             <div class="item__input">
                                 <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
@@ -33,11 +33,11 @@
                                 </span>
                             </div>
                             <a >
-                            <button class="item__submit" href="./../../pages/shop/carrito.html" type="submit">Agregar al carrito</button>
+                            <button class="item__submit" href="#" type="submit">Agregar al carrito</button>
                         </a>
                         </form>
                         <p class="item__promo">
-                            <a class="item__promo--link" href="./../../pages/shop/shop.html">Ver métodos de pago</a>
+                            <a class="item__promo--link" href="#">Ver métodos de pago</a>
                             - 3 CUOTAS SIN INTERÉS
                         </p>
                     </article>

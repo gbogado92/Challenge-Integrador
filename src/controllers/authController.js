@@ -1,5 +1,8 @@
-const fs = require('fs')// Por si necesito un leer un FileSystem
-const data = JSON.parse(fs.readFileSync("./src/fileJson/data.json", "utf8"));
+const dotenv = require('dotenv')
+const bodyParser = require('body-parser')
+const { validationResult } = require('express-validator')
+dotenv.config()
+const {addUserFromDB, getUserByEmailFromDB} = require('../models/users')
 
 module.exports ={
 
@@ -9,21 +12,55 @@ module.exports ={
         msg: req.query.msg
     })},
 
-    postLogin: function(req, res){
-        console.log(req.body) //repuestas del formulario
-        res.send(`<h1> El usuario se creo correctamente ${req.body.nombre} </h1>
-                <a href="./../views/admin/admin"> Ir a la pagina principal de administracion</a>`)
-            },
+    postLogin: async(req, res) => { 
+        try {
+            const {email, password} = req.body;
+            const user = await getUserByEmailFromDB(email);
+            const passwordAdmin = process.env.PASSWORD_ADMIN;
 
-    register: (req, res) => {
-        res.render('admin/createUser.ejs')
-        },
+            if(user && Object.keys(user).length > 1 && user.password == password && user.password == passwordAdmin){
 
-    postRegister: function(req, res){
-    console.log(req.body) //repuestas del formulario
-    res.send(`<h1> El producto se edito correctamente ${req.body.nombre} </h1>
-            <a href="./../views/admin/admin"> Ir a la pagina principal de administracion</a>`)
-        },
+                req.session.esAdmin = true;
+                res.redirect('/admin');
+            }else if(user && Object.keys(user).length > 1 && user.password == password){
+                req.session.esAdmin = false;
+                res.redirect('/');
+            }else{
+                res.redirect('/auth/login');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    },
+
+    register: (req, res) => { 
+        res.render('admin/createUser.ejs', {
+            title: "Registro | FunkoShop",
+            errores: [],
+            valores: req.body
+        })
+    },
+
+    postRegister: async(req, res) => { 
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()){ 
+            res.render('admin/createUser.ejs', {
+                title: 'Registro | FunkoShop',
+                errores: errors.array(),
+                valores: req.body
+            })
+        }
+        else{
+        try {
+            const userData = req.body;
+            await addUserFromDB(userData);
+            let msg = 'Usuario creado! Inicia sesión para continuar';
+            res.redirect(`/auth/login/?msg=${msg}`);
+        } catch (error) {
+        }
+    }
+},
 
     logout: (req, res) => {
         res.render('./../views/admin/login')

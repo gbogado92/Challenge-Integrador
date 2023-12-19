@@ -11,22 +11,22 @@
         
         <div class="container"> 
             <aside class="sidebar">
-                <form class="aside__filter">
-                    <p class="aside__text">BUSCAR</p>
-                    <input class="aside__input" type="text" placeholder="item o categoria">
-                    <label class="aside__select" for="Funko select">Ordenar por</label>
-                    <select class="aside__input" name="Funkos" id="Funko select">
-                        <option value="">Mayor a menor</option>
-                        <option value="">Menor a mayor</option>
+                <form class="aside__filter" role="search" id="search-form" action="/shop" method="get">
+                    <p class="aside__text" for="form-item">BUSCAR</p>
+                    <input class="aside__input" type="text" placeholder="item o categoria" name="nombre">
+                    <label class="aside__select" for="form-ordenar">Ordenar por</label>
+                    <select class="aside__input" name="orden" id="#">
+                        <option value="DESC">Mayor a menor</option>
+                        <option value="ASC">Menor a mayor</option>
                         <option value="">Mas vendido</option>
                         <option value="">Mas reciente</option>
                     </select>
                     <p class="aside__text">PRECIO</p>
                     <div class="aside__minmax">
                         <label class="aside__select--number" for="Min-Max"> Min
-                            <input type="number" id="Min-Max">
+                            <input type="number" id="form-precio-min" placeholder="0" class="formulario-input" name="precioMin">
                             Max
-                            <input type="number" id="Min-Max">
+                            <input type="number" id="form-precio-max" placeholder="0" class="formulario-input" name="precioMax">
                         </label>
                     </div>
                     <p class="aside__text">FILTRAR</p>

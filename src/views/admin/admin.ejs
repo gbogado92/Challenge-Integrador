@@ -32,13 +32,13 @@
                     <h3>Nombre del Producto</h3>
                     <h3>Categoria</h3>
                 </div>
-                <% data.forEach(item => { %> 
+                <% listaFunkos.forEach(item => { %> 
                 <article class="admin__table-row">
-                    <p><%=item.product_id%></p>
-                    <p><%=item.product_sku%></p>
-                    <p><%=item.product_name%></p>
-                    <p><%=item.licence_name%></p>
-                    <a href="/admin/edit.ejs"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a>
+                    <p><%=funko.product_id%></p>
+                    <p><%=funko.product_sku%></p>
+                    <p><%=funko.product_name%></p>
+                    <p><%=funko.licence_name%></p>
+                    <a href="/admin/edit/<%- funko.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a>
                     <a type="submit"><iconify-icon icon="heroicons-solid:trash" style="color: #f33;"></iconify-icon></a>
                 </article>
                 <% }) %>
