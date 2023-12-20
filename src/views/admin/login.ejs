@@ -12,20 +12,26 @@
 <body>
    
     <main class="main-container">
+        <div class="account__msg">
+            <% if (msg != undefined) { %>
+             <p class="msg">  <%= msg %> </p>
+             <% } %>
+        </div>
         <h1 class="login_title">INGRESAR A MI CUENTA</h1>
         <form action="" class="form_login">
                 <div class="login_email">
                     <label class="login_label-email" for="email">Email</label>
-                    <input class="login_input-email" type="email" id="email">
+                    <input class="login_input-email" id="email" type="email" id="email">
                 </div>
                 <div class="login_password">
                     <label class="login_label-password"for="contraseña">Contraseña</label>
-                    <input class="login_input-password" type="password" id="contraseña">
+                    <input class="login_input-password" id="contraseña" type="password" id="contraseña">
                 </div>
                 <div class="login_ingresar">
-                    <button type="submit" class="login_ingresar-button">Ingresar</button>
-                    <input type="checkbox" id="recordarme">
-                    <label for="recordarme">Recordarme</label>
+                    <!-- <button type="submit" class="login_ingresar-button">Ingresar</button> -->
+                    <input class="login_ingresar-button" type="submit" value="Ingresar">
+                    <input type="checkbox"  id="aceptar">
+                    <label for="recordarme" for="aceptar">Recordarme</label>
                 </div>
                 <a class="login_olvide-contraseña" href="#">Olvidé mi contraseña</a>
         </form>  
