@@ -19,9 +19,6 @@ module.exports = {
 
   postCreate: async (req, res) => {
     try {
-      // Agregar lógica para insertar el producto en la base de datos
-      // Ejemplo: await pool.query("INSERT INTO product (column1, column2, ...) VALUES (?, ?, ...)", [req.body.value1, req.body.value2, ...]);
-
       console.log(req.body);
       res.send(`<h1> El producto se creó correctamente ${req.body.nombre} </h1>
                 <a href="./../views/admin/admin"> Ir a la pagina principal de administracion</a>`);
@@ -51,15 +48,10 @@ module.exports = {
 
   putId: (req, res) => {
     res.send("<h1>Usamos method override</h1>");
-    // Agregar lógica para actualizar el producto en la base de datos
-    // Ejemplo: await pool.query("UPDATE product SET column1 = ?, column2 = ... WHERE product_id = ?", [req.body.value1, req.body.value2, ..., req.params.id]);
   },
 
   deleteId: async (req, res) => {
     try {
-      // Agregar lógica para eliminar el producto de la base de datos
-      // Ejemplo: await pool.query("DELETE FROM product WHERE product_id = ?", [req.params.id]);
-
       res.render("./../views/admin/admin");
     } catch (error) {
       console.error(
