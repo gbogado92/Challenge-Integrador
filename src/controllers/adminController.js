@@ -19,13 +19,13 @@ module.exports ={
         const idParam = parseInt(req.params.id);
         const item = data.find(item => item.product_id === idParam);
     
-        res.render('admin/edit', {view: {title: "Item | Funkoshop"},
+        res.render('./../views/admin/edit', {view: {title: "Item | Funkoshop"},
                     item: item,
             });
     
         },
 
-    putId: (req, res) => {
+    postEdit: (req, res) => {
         res.send('<h1>usamos method override</h1>')
         //editParams
         },

@@ -9,7 +9,7 @@ const override = require('method-override')
 const app = express() //ejecuto el modulo
 
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, '/src/views'))
+app.set('views', path.join(__dirname, './src/views'))
 
 app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded())

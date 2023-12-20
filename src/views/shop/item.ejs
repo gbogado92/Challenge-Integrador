@@ -17,13 +17,14 @@
                         <img class="card-item__img--front" src="./../../img/star-wars/baby-yoda-1.webp"
                             alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
                         <img class="card-item__img--back" src="./../../img/star-wars/baby-yoda-box.webp"
-                            alt="Figura coleccionable Funko de <%= item.product_name%>">
+                            alt="Figura coleccionable Funko de ">
                     </picture>
                     <article class="item__info">
-                        <p class="item__licence"><%= data.licence_name%></p>
-                        <h3 class="item__name"><%= data.product_name%></h3>
-                        <p class="item__description">Figura coleccionable de <%= item.product_description%></p>
-                        <p class="item__price"><%= data.product_price%></p>
+                        <p class="item__licence">STAR WARS</p>
+                        <h3 class="item__name">BABY YODA BLUEBALL</h3>
+                        <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+                            limitada.</p>
+                        <p class="item__price">$ 1799,99</p>
                         <form class="item__cart">
                             <div class="item__input">
                                 <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
@@ -33,7 +34,7 @@
                                 </span>
                             </div>
                             <a >
-                            <button class="item__submit" href="./../../pages/shop/carrito.html" type="submit">Agregar al carrito</button>
+                            <button class="item__submit" href="./carrito.ejs" type="submit">Agregar al carrito</button>
                         </a>
                         </form>
                         <p class="item__promo">
@@ -122,6 +123,6 @@
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script src="./../../../public/js/item.js"></script>
-        <script src="./../../../public/js/glide.js></script>
+        
     </body>
 </html>

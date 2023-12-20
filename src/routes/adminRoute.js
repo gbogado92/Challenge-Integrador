@@ -15,7 +15,7 @@ router.get('/admin', adminController.admin)
 router.get('/admin/create', adminController.create)
 router.post('/admin/create', adminController.postCreate)
 router.get('/admin/edit', adminController.edit)
-router.put('/admin/edit:id', adminController.putId)
+router.post('/admin/edit:id', adminController.postEdit)
 router.delete('/admin/delete/:id', adminController.deleteId)
 
 module.exports =router
