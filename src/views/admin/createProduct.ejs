@@ -11,53 +11,50 @@
         <main class="main container">
             <h1 class="main-title">CREAR NUEVO ITEM</h1>
             
-            <form class="main-form" action="/admin/create" method="post" enctype="application/x-www-form-urlencoded">
-
+            <form class="main-form" action="/home" method="post" enctype="application/x-www-form-urlencoded">
+    
                 <section class="main-form__options">
                     <label class="main-form__options--label" for="categoria">Categoría:</label>
                     
-                    <select class="main-form__options--select" name="category_id" id="categoria">
-                         <% categories.map(category=>{%>
-                            <option value="<%= category.category_id%>">
-                              <%= category.category_name %>
-                            </option>
-                         <%})%>
+                    <select class="main-form__options--select" name="categoria" id="categoria">
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="" >categoria 1</option>
+                        <option value="" >categoria 2</option>
+                        
                     </select>
-
+    
                     <label class="main-form__options--label" for="licencia">Licencia:</label>
                     
-                    <select class="main-form__options--select" name="licence_id" id="licencia">
-                        <%licences.map(licence=>{%>
-                            <option value="<%= licence.licence_id%>">
-                              <%= licence.licence_name%>
-                            </option>
-                        <%})%>
+                    <select class="main-form__options--select" name="licencia" id="licencia">
+                        
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="" >licencia 1</option>
+                        <option value="" >licencia 2</option>
                     </select>
                 </section>
                 <section class="main-form__product-name-description">
                     <section class="main-form__product-name-description--name">
                         <label class="main-form__product-name-description__label" for="nombre-producto">Nombre del producto:</label>
-                        <input class="main-form__product-name-description__input" type="text" name="product_name" id="nombre" 
-                        placeholder="Kakashi Hatake Shippuden Saga" required>
-
+                        <input class="main-form__product-name-description__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+    
                     </section>
                     <div class="main-textarea">
-                        <textarea class="main-form__product-name-description--textarea" name="product_description" id="descripcion" cols="100" rows="10" placeholder="Descripción del producto" required></textarea>
+                        <textarea class="main-form__product-name-description--textarea" name="descripcion-producto" id="descripcion-producto" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
                     </div>
                 </section>
                 <section class="main-form__inputs">
                     <label class="main-form__inputs--label" for="sku">SKU:</label>
-                    <input class="main-form__inputs--input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
+                    <input class="main-form__inputs--input" type="text" name="sku" id="sku" placeholder="SSK111AB001">
                     <label class="main-form__inputs--label" for="precio">Precio:</label>
-                    <input class="main-form__inputs--input" type="text" name="price" id="precio" placeholder="$ 0.000,00" required>
+                    <input class="main-form__inputs--input" type="text" name="precio" id="precio" placeholder="$ 0.000,00">
                     <label class="main-form__inputs--label" for="stock">Stock:</label>
-                    <input class="main-form__inputs--input" type="text" name="stock" id="stock" placeholder="0" required>
+                    <input class="main-form__inputs--input" type="text" name="stock" id="stock" placeholder="0">
                 </section>
                 <section class="main-form__promo">
                     <label class="main-form__promo--label" for="descuento">Descuento:</label>
-                    <input class="main-form__promo--input-c" type="text" name="discount" id="descuento" placeholder="0%" required>
+                    <input class="main-form__promo--input-c" type="text" name="descuento" id="descuento" placeholder="0%">
                     <label class="main-form__promo--label" for="cuotas">Cuotas:</label >
-                    <select class="main-form__promo--select" name="dues" id="cuotas" required>
+                    <select class="main-form__promo--select" name="cuotas" id="cuotas">
                         
                         <option value="" disabled selected>3 Cuotas sin interés</option>
                         <option value="" selected>3 Cuotas sin interés</option>
@@ -65,13 +62,13 @@
                         <option value="">9 Cuotas sin interés</option>
                         <option value="">0</option>
                     </select>
-
+    
                 </section>
                 <section class="main-form__images">
                     <label class="main-form__images--label" for="imagenes">Imágenes:</label>
-                    <input class="main-form__images--input" type="file"  id="imagenes" name="image_front" accept="image/png, image/gif, image/jpeg, image/webp" multiple>
+                    <input class="main-form__images--input" type="file" name="imagen" accept="image/png, image/gif, image/jpeg, image/webp" id="">
                 </section>
-
+    
                 <section class="main-form__buttons">
                     <input class="main-form__buttons--button" type="submit" value="Agregar Producto">
                     <input class="main-form__buttons--button" type="reset" value="Limpiar">

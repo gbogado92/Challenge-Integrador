@@ -7,19 +7,16 @@
         <link rel="stylesheet" href="./../../css/edit.css">
     </head>
     <body>
-        <main class="container edit">
-            <h1 class="edit__title">EDITAR ITEM</h1>  
-            <form class="edit__form" action="" method="POST" enctype="multipart/form-data">
+        <main class="main container">
+            <h1 class="edit__title">EDITAR ITEM</h1>
+            <form class="edit__form">
                 <div class="edit__form-fila">
     
                     <label class="edit__form-label" for="categoria">Categoría:</label>
-                    <select class="edit__form-select" id="categoria" name="category_id">
-                        <% categories.map(category =>{%>
-                                <option 
-                                value="<%= category.category_id%>"
-                                <% if(category.category_id == data.category_id) { %> selected <% } %>
-                                ><%= category.category_name%></option>
-                            <%})%>
+                    <select class="edit__form-select" id="categoria" name="categoria">
+                        <option value="figuras">Figuras</option>
+                        <option value="remeras">Remeras</option>
+                        <option value="llaveros">Llaveros</option>
                     </select>
     
                     <label class="edit__form-label" for="licencia">Licencia:</label>

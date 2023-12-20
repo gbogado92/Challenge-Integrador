@@ -10,40 +10,37 @@
     <body>
         
         <main class="container"> 
-            
             <section class="item">
-                <form method="post" action=""></form>
-                    <picture class="card-item__cover">
-                        <img class="card-item__img--front" src="./../../img/star-wars/baby-yoda-1.webp"
-                            alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
-                        <img class="card-item__img--back" src="./../../img/star-wars/baby-yoda-box.webp"
-                            alt="Figura coleccionable Funko de <%= item.product_name%>">
-                    </picture>
-                    <article class="item__info">
-                        <p class="item__licence"><%= data.licence_name%></p>
-                        <h3 class="item__name"><%= data.product_name%></h3>
-                        <p class="item__description">Figura coleccionable de <%= item.product_description%></p>
-                        <p class="item__price"><%= data.product_price%></p>
-                        <form class="item__cart">
-                            <div class="item__input">
-                                <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
-                                <span class="item__button">
-                                    <button id="add" class="item__button-group" type="button">+</button>
-                                    <button id="subtract" class="item__button-group" type="button">-</iconify-icon></button>
-                                </span>
-                            </div>
-                            <a >
-                            <button class="item__submit" href="./../../pages/shop/carrito.html" type="submit">Agregar al carrito</button>
-                        </a>
-                        </form>
-                        <p class="item__promo">
-                            <a class="item__promo--link" href="#">Ver métodos de pago</a>
-                            - 3 CUOTAS SIN INTERÉS
-                        </p>
-                    </article>
-                </form>
+                <picture class="card-item__cover">
+                    <img class="card-item__img--front" src="./../../img/star-wars/baby-yoda-1.webp"
+                        alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+                    <img class="card-item__img--back" src="./../../img/star-wars/baby-yoda-box.webp"
+                        alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian-Package">
+                </picture>
+                <article class="item__info">
+                    <p class="item__licence">STAR WARS</p>
+                    <h3 class="item__name">BABY YODA BLUEBALL</h3>
+                    <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+                        limitada.</p>
+                    <p class="item__price">$ 1799,99</p>
+                    <form class="item__cart">
+                        <div class="item__input">
+                            <input class="item__text" type="text" name="quantity" id="quantity" placeholder="0">
+                            <span class="item__button">
+                                <button id="add" class="item__button-group" type="button">+</button>
+                                <button id="subtract" class="item__button-group" type="button">-</iconify-icon></button>
+                            </span>
+                        </div>
+                        <a >
+                        <button class="item__submit" href="./../../pages/shop/carrito.html" type="submit">Agregar al carrito</button>
+                    </a>
+                    </form>
+                    <p class="item__promo">
+                        <a class="item__promo--link" href="./../../pages/shop/shop.html">Ver métodos de pago</a>
+                        - 3 CUOTAS SIN INTERÉS
+                    </p>
+                </article>
             </section>
-
             <section class="slider glide">
                 <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
                 <div class="glide__track" data-glide-el="track">
@@ -117,7 +114,7 @@
                             icon="tabler:chevron-right"></iconify-icon></button>
                 </div>
             </section>
-        </main> 
+        </main>
         <%- include('./../partials/footerS') -%>
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
