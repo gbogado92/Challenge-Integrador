@@ -1,69 +1,27 @@
-const Utilities = require("../utilities/fs.js")
-const { getAllFunkosFromDB, getFunkoFromDB, getFunkosBy } = require("../models/model.js")
-
+//const fs = require('fs')// Por si necesito un leer un FileSystem
 module.exports ={
 
-    // shop: async (req, res) => {
-    //     try {
-    //         let response;
-    //         if (Object.keys(req.query).length === 0) { response = await getAllFunkosFromDB(); }
-    //         else { response = await getFunkosBy(req.query); }
-            
-    //         res.render("./shop/shop.ejs", {
-    //             title: "Shop | Funkoshop",
-    //             listaFunkos: response,
-    //         });
-    //     } catch (error) {
-            
-    //      }
-    // },
     shop: (req, res) => {
-        res.render('shop/shop',
-            {
-                title: 'Shop| Funkoshop',
-                content: 'Ruta para la vista de contacto'
-            })
-    },
+        res.render('./../views/shop/shop')
+        },
 
-    id: async (req, res) => {
-        try {
-            const product_id = req.params.id;
-            const response = await getFunkoFromDB(product_id);
-            const funkos = await getAllFunkosFromDB();
-            res.render("./shop/item.ejs", {
-                title: `${response.product_name} | Funkoshop`,
-                funko: response,
-                funkos
-            });
-        } catch (error) { }
-    },
+    id: (req, res) => {
+        res.render('./../views/shop/item')
+        },
 
-    postAdd: (req, res) => {
-        res.send("Ruta para agregar el producto actual al carrito");
-    },
-    cart: async (req, res) => {
-        try {
-            const id1 = Math.floor(Math.random() * 14);
-            const id2 = Math.floor(Math.random() * 14);
-            console.log(id1, id2);
-            const cantidad1 =  Math.floor(Math.random() * 10) + 1;
-            const cantidad2 =  Math.floor(Math.random() * 10) + 1;
-            const responseFunko1 = await getFunkoFromDB(id1);
-            const responseFunko2 = await getFunkoFromDB(id2);
-            res.render("./shop/cart.ejs", {
-                title: "Carrito | Funkoshop",
-                funko1: responseFunko1,
-                funko2: responseFunko2,
-                cantidad1: cantidad1,
-                cantidad2: cantidad2,
-            });
-        } catch (error) { }
-    },
+    postAdd: function(req, res){
+             console.log(req.body) //repuestas del formulario
+                res.send(`<h1> Se agrego el Item con éxito ${req.body.nombre} </h1>
+                     <a href="/src/views/index"> Ir a página de administración</a>`)
+              },
 
-    postCart:  (req, res) => {
-        res.render("default-template.ejs", {
-            title: "Checkout | Funkoshop",
-            content: "Ruta para la vista de pagos",
-        })
-    },
+    cart: (req, res) => {
+        res.render('./../views/shop/carrito')
+        },
+
+    postCart: function(req, res){
+            console.log(req.body) //repuestas del formulario
+            res.send(`<h1> El pago se genero ${req.body.nombre} </h1>
+                <a href="/home"> Ir a página principal</a>`)
+         },
 }
