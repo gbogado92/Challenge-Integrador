@@ -12,22 +12,17 @@
         <main class="main container">
             <h1 class="register_title">CREA TU CUENTA</h1>
             <h2 class="register_subheader">Completa el formulario para sere parte del mundo de los Funkos</h2>
-            <form class="register_form"action="/auth/register" method="post">
+            <form class="register_form"action="#">
                 <label class="register_label-contraseña"for="nombre">Nombre:</label>
-                <input class="register_input-red_line" name="name" type="text" id="nombre" placeholder="John" value="<%= valores.name %>">
-
-
+                <input class="register_input-red_line"type="text" id="nombre" placeholder="John">
                 <label class="register_label-contraseña"for="apellido">Apellido:</label>
-                <input class="register_input-red_line" type="text" id="apellido" placeholder="Doe" name="lastname" value="<%= valores.lastname %>">
-                
+                <input class="register_input-red_line"type="text" id="apellido" placeholder="Doe">
                 <label class="register_label-contraseña"for="email">Email:</label>
-                <input class="register_input-red_line" type="email" id="email" placeholder="johndoe@correo.com" name="email" value="<%= valores.email %>">
-
-                <label class="register_label-contraseña" for="contraseña">Contraseña:</label>
-                <input class="register_input-red_line" type="password" id="contraseña" placeholder="........." name="password">
-
+                <input class="register_input-red_line"type="email" id="email" placeholder="johndoe@correo.com">
+                <label class="register_label-contraseña"for="contraseña">Contraseña:</label>
+                <input class="register_input-red_line"type="password" id="contraseña" placeholder=".........">
                 <label class="register_label-contraseña"for="contraseña">Repita Contraseña:</label>
-                <input class="register_input-red_line"type="password" id="contraseña" placeholder="........." name="rePassword" formnovalidate="formnovalidate">
+                <input class="register_input-red_line"type="password" id="contraseña" placeholder=".........">
                 <div class="register_submit-section">
                     <button type="submit" class="login_ingresar-button">Ingresar</button>
                     <input type="checkbox" id="recordarme">
