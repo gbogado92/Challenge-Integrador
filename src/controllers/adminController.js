@@ -1,4 +1,4 @@
-const fs = require('fs')// Por si necesito un leer un FileSystem
+const fs = require('fs') // Por si necesito un leer un FileSystem
 const data = JSON.parse(fs.readFileSync("./src/fileJson/data.json", "utf8"));
 module.exports ={
 
@@ -27,7 +27,7 @@ module.exports ={
 
     postEdit: (req, res) => {
         res.send('<h1>usamos method override</h1>')
-        //editParams
+        editParams
         },
 
     deleteId: (req, res) => {
