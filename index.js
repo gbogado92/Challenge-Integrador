@@ -24,7 +24,7 @@ app.use((req, res, next) => {
   res.status(404).render(`404`);
 });
 
-const port = process.env.PORT || 3306;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () =>
   console.log(`El server ésta funcionando en localhost: ${port}`)
