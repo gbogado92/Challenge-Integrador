@@ -2,7 +2,7 @@ const fs = require('fs') // Por si necesito un leer un FileSystem
 const data = JSON.parse(fs.readFileSync("./src/fileJson/data.json", "utf8"));
 module.exports ={
 
-    admin: (req, res) => {res.render('admin/admin', {title: "Admin | Funkoshop", data:data})},
+    admin: (req, res) => {res.render('./../views/admin/admin', {title: "Admin | Funkoshop", data:data})},
 
     create: (req, res) => {
         res.render('./../views/admin/createProduct')
