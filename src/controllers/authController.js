@@ -3,7 +3,7 @@ const data = JSON.parse(fs.readFileSync("./src/fileJson/data.json", "utf8"));
 
 module.exports ={
 
-    login: (req, res) => {res.render('admin/login.ejs',
+    login: (req, res) => {res.render('../views/admin/login.ejs',
     { 
         title: 'Iniciar Sesión | Funkoshop',
         msg: req.query.msg
@@ -16,7 +16,7 @@ module.exports ={
             },
 
     register: (req, res) => {
-        res.render('admin/createUser.ejs')
+        res.render('../views/admin/createUser.ejs')
         },
 
     postRegister: function(req, res){

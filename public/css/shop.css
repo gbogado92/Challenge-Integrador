@@ -90,7 +90,7 @@ img{
     max-width:1200px;
     margin: 0 auto;
     display: grid;
-    gap: 1.6em;
+    gap: 1em;
     grid-template-columns: repeat(5,1fr);
 }
 
@@ -162,15 +162,20 @@ header {
     grid-column: span 4;
 }
 
+.sidebar{
+    max-width: 300px;
+    width: 100%;
+}
 
 /*Aside*/
+
 
 
 .aside__filter {
     display: flex;
     flex-direction: column;
-    margin: var(--spacing-68) auto;
-    padding: 0 var(--spacing-24);
+    margin: var(--spacing-68) 0;
+    padding:  var(--spacing-24);
 }
 
 .aside__filter {
@@ -186,7 +191,7 @@ header {
 }
 
 .aside__input {
-    padding: var(--spacing-8) 0;
+    padding: var(--spacing-8) ;
 }
 
 .aside__select--number {
@@ -197,27 +202,19 @@ header {
 }
 
 .aside__minmax {
-    padding: 0 var(--spacing-12) 0 0;
+    width: auto; 
 }
 
-#Min-Max {
-    width:var(--spacing-36);
+#form-precio-min {
+    width: 25%;
+    font-size: var(--font-xsmall);
+    text-align: center;
 }
 
-
-/*Main*/
-.main{
-    width: 100%;
-}
-
-/*Aside*/
-.aside__filtrar {
-   display: flex;
-   flex-direction: column;
-   padding:0 var(--spacing-12);
-   font-size: var(--font-medium);
-   font-family: var(--base-font);
-   gap: var(--spacing-16)
+#form-precio-max {
+    width: 25%;
+    font-size: var(--font-xsmall);
+    text-align: center;
 }
 
 
@@ -226,7 +223,7 @@ header {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-36); 
+    gap: var(--spacing-24); 
 } 
 
 .product__collection{

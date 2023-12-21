@@ -11,8 +11,8 @@
         <main class="main container">
             <h1 class="main-title">CREAR NUEVO ITEM</h1>
             
-            <form class="main-form" action="/admin/edit/20" method="post" enctype="application/x-www-form-urlencoded">
-
+            <form class="main-form" action="/home" method="post" enctype="application/x-www-form-urlencoded">
+    
                 <section class="main-form__options">
                     <label class="main-form__options--label" for="categoria">Categoría:</label>
                     
@@ -22,7 +22,7 @@
                         <option value="" >categoria 2</option>
                         
                     </select>
-
+    
                     <label class="main-form__options--label" for="licencia">Licencia:</label>
                     
                     <select class="main-form__options--select" name="licencia" id="licencia">
@@ -36,7 +36,7 @@
                     <section class="main-form__product-name-description--name">
                         <label class="main-form__product-name-description__label" for="nombre-producto">Nombre del producto:</label>
                         <input class="main-form__product-name-description__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
-
+    
                     </section>
                     <div class="main-textarea">
                         <textarea class="main-form__product-name-description--textarea" name="descripcion-producto" id="descripcion-producto" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
@@ -62,13 +62,13 @@
                         <option value="">9 Cuotas sin interés</option>
                         <option value="">0</option>
                     </select>
-
+    
                 </section>
                 <section class="main-form__images">
                     <label class="main-form__images--label" for="imagenes">Imágenes:</label>
                     <input class="main-form__images--input" type="file" name="imagen" accept="image/png, image/gif, image/jpeg, image/webp" id="">
                 </section>
-
+    
                 <section class="main-form__buttons">
                     <input class="main-form__buttons--button" type="submit" value="Agregar Producto">
                     <input class="main-form__buttons--button" type="reset" value="Limpiar">

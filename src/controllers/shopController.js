@@ -2,11 +2,11 @@
 module.exports ={
 
     shop: (req, res) => {
-        res.render('./../views/shop/shop')
+        res.render('shop/shop')
         },
 
     id: (req, res) => {
-        res.render('./../views/shop/item')
+        res.render('shop/item')
         },
 
     postAdd: function(req, res){
@@ -16,7 +16,7 @@ module.exports ={
               },
 
     cart: (req, res) => {
-        res.render('./../views/shop/carrito')
+        res.render('shop/carrito')
         },
 
     postCart: function(req, res){
