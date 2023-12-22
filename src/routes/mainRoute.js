@@ -4,7 +4,7 @@ const mainController = require('./../controllers/mainController.js')
 const router = express.Router()
 
 const config = multer.diskStorage({
-    destination: './../../public/img',
+    destination: './../../assets/img',
     filename: (req, file, cb) => cb(null,'${Date.now()}_${file.originalname}')
 })
 

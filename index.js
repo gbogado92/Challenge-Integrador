@@ -10,7 +10,7 @@ const app = express(); //ejecuto el modulo
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/src/views"));
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/assets"));
 app.use(express.urlencoded());
 app.use(express.json());
 app.use(override("_method")); //sobreescribir metodos

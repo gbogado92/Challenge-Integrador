@@ -5,7 +5,7 @@ const authController = require('./../controllers/authController.js')
 const router = express.Router()
 
 const config = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, path.resolve(__dirname, '../../public/img')),
+    destination: (req, file, cb) => cb(null, path.resolve(__dirname, '../../assets/img')),
     filename: (req, file, cb) => cb(null, Date.now() + '_' + file.originalname)
 })
 
